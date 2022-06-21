@@ -1110,6 +1110,7 @@ h2:hover {
 
 .img > img {
     transition: 0.5s all;
+    cursor: pointer;
 }
 
 .categoria {
@@ -1121,6 +1122,7 @@ h2:hover {
 .categoria .nombrecat {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .nombrecat p {
@@ -1226,6 +1228,7 @@ h2:hover {
     width: 100%;
     object-fit: cover;
     border-radius: 2%;
+    cursor: pointer;
     
 }
 
@@ -1243,7 +1246,9 @@ h2:hover {
 .paginado img {
     height: 20px;
     width: 20px;
-    filter: invert(100%)
+    filter: invert(100%);
+    transition: 0.5s all;
+    cursor: pointer;
 }
 
 .paginado a {
@@ -1255,10 +1260,7 @@ h2:hover {
     padding-bottom: 10px;
     filter: drop-shadow(1px 1px 15px black);
     transition: 0.5s all;
-}
-
-.paginado img {
-    transition: 0.5s all;
+    cursor: pointer;
 }
 
 .categoria ul .k14 {
@@ -1367,6 +1369,7 @@ h2:hover {
     width: 45px;
     filter: invert(100%);
     transition: 0.5s all;
+    cursor: pointer;
 }
 
 .tiendaElementos {
@@ -1396,6 +1399,7 @@ h2:hover {
     width: 60%;
     transition: 0.5s all;
     aspect-ratio: 4/6;
+    cursor: pointer;
 }
 
 .tiendaItem h4 {
@@ -1435,6 +1439,7 @@ h2:hover {
     width: 35px;
     filter: drop-shadow(1px 1px 15px white) invert(100%);
     transition: 0.5s all;
+    cursor: pointer;
 }
 
 .tiendaCabecera img:hover, .itemImagenes img:hover {
@@ -1560,6 +1565,7 @@ h4{
     margin-top: 20px;
 }
 
+
 .mapa{
     grid-area: mapa;
 }
@@ -1684,6 +1690,7 @@ option {
     box-shadow: 1px 1px 15px black;
     transition: 0.5s all;
     margin-left: 5%;
+    cursor: pointer;
 }
 
 .formContacto button:hover, .novedadesIngreso button:hover {
