@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página web -->
+    <title> Martin Garrix ~ Galería </title>
+
+    <!-- Link para el icono de la página web -->
+    <link rel="shortcut icon" href="../multimedia/imagenes/favicon.ico" type="image/x-icon">
+
+    <!-- Link a hoja de estilo propia -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Link a fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+    <!-- Link a hoja de estilo para algunas animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header con Navbar -->
+    <header class="cabecera">
+
+        <!-- Logo en el Navbar, redirecciona al Home -->
+        <a href="../index.html"><img src="../multimedia/imagenes/logov.png" alt="Logo Martin Garrix"
+                class="logonav"></a>
+
+        <!-- Barra de Navegación: Trayectoria, Galería, Discografía, Tienda, Contacto -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="../paginas/trayectoria.html"> Trayectoria </a></li>
+                <li><a href="../paginas/discografia.html"> Discografía </a></li>
+                <li><a href="../paginas/galeria.html" class="active"> Galería </a></li>
+                <li><a href="../paginas/tienda.html"> Tienda </a></li>
+                <li><a href="../paginas/contacto.html"> Contacto </a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Section Galería -->
+    <section class="galeria">
+
+        <div class="imgblur"></div> <!-- Línea blanca visual -->
+
+        <!-- Filtros: listas de festivales y años para filtrar -->
+        <div class="filtros">
+
+            <!-- Imagen para maximizar o minimizar los filtros -->
+            <div class="minmax">
+                <div class="img">
+                    <img src="../multimedia/imagenes/izquierdaN.png">
+                </div>
+            </div>
+
+            <!-- Categoría para el festival Tomorrowland junto con su lista de años -->
+            <div class="categoria">
+                <div class="nombrecat">
+                    <img src="../multimedia/imagenes/abajoN.png">
+                    <p> TOMORROWLAND </p>
+                </div>
+
+                <ul>
+                    <li class="k14"> 2014 </li>
+                    <li> 2015 </li>
+                    <li> 2016 </li>
+                    <li> ... </li>
+                </ul>
+            </div>
+
+            <!-- Categoría para el festival Ultra junto con su lista de años -->
+            <div class="categoria">
+                <div class="nombrecat">
+                    <img src="../multimedia/imagenes/abajoN.png">
+                    <p> ULTRA </p>
+                </div>
+
+                <ul>
+                    <li> 2014 </li>
+                    <li> 2015 </li>
+                    <li> 2016 </li>
+                    <li> ... </li>
+                </ul>
+            </div>
+
+            <!-- Categoría para otros festivales -->
+            <div class="categoria">
+                <div class="nombrecat">
+                    <img src="../multimedia/imagenes/derechaN.png">
+                    <p> OTROS FESTIVALES</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="imgblur"></div> <!-- Línea blanca visual -->
+
+        <!-- Visualización de las imagenes -->
+        <div class="visualizacion">
+            
+            <!-- Título con la categoría y año seleccionado -->
+            <p> TOMORROWLAND 2014 </p>
+
+            <!-- Imágenes asociadas a la categoría seleccionada -->
+            <div class="imagenes">
+                <div><img src="../multimedia/imagenes/galeria1.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria2.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria3.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria4.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria5.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria6.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria7.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria8.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria9.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria10.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria11.jpg" alt=""></div>
+                <div><img src="../multimedia/imagenes/galeria12.jpg" alt=""></div>
+            </div>
+
+            <!-- Paginación -->
+            <div class="paginado">
+                <img src="../multimedia/imagenes/izquierdaFinoN.png">
+                <a class="n1" href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">...</a>
+                <img src="../multimedia/imagenes/derechaFinoN.png">
+            </div>
+           
+        </div>
+
+        <div class="imgblur"></div> <!-- Línea blanca visual -->
+
+    </section>
+
+    <hr>
+
+    <!-- Footer con redes sociales y algunas políticas -->
+    <footer>
+
+        <!-- Redes Sociales del DJ y del sello discográfico: formados por 1 logo + 5 redes cada uno -->
+        <div class="socialfooter" data-aos="fade" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+
+            <div class="social">
+
+                <!-- Logo Garrix -->
+                <img src="../multimedia/imagenes/logogarrixf.png" alt="Logo Garrix Social" class="grx">
+
+                <!-- Redes -->
+                <ul>
+                    <li><a href="https://www.youtube.com/martingarrix" target="_blank"><img
+                                src="../multimedia/imagenes/youtube.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/martingarrix/" target="_blank"><img
+                                src="../multimedia/imagenes/instagram.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/martin.garrix/" target="_blank"><img
+                                src="../multimedia/imagenes/facebook.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/martingarrix" target="_blank"><img
+                                src="../multimedia/imagenes/twitter.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/artist/60d24wfXkVzDSfLS6hyCjZ" target="_blank"><img
+                                src="../multimedia/imagenes/spotify.png" alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <!-- Logo Stmpd -->
+                <img src="../multimedia/imagenes/logostmpdf.png" alt="Logo Stmpd Social" class="stmpd">
+
+                <!-- Redes -->
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCB-7IEpKGIdXkgGUObE5D5A" target="_blank"><img
+                                src="../multimedia/imagenes/youtube.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/stmpdrcrds/" target="_blank"><img
+                                src="../multimedia/imagenes/instagram.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/STMPDRCRDS/" target="_blank"><img
+                                src="../multimedia/imagenes/facebook.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/stmpdrcrds" target="_blank"><img
+                                src="../multimedia/imagenes/twitter.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/user/stmpdrcrds" target="_blank"><img
+                                src="../multimedia/imagenes/spotify.png" alt=""></a></li>
+                </ul>
+
+            </div>
+        </div>
+        <hr>
+
+        <!-- Footer del footer para algunas políticas -->
+        <div class="footernav">
+            <p class="copy"> Copyright © 2022 Martin Garrix </a>
+            <ul>
+                <li><a href="../paginas/politicas/termcond.html" class="politicas"> T&C </a></li>
+                <li><a href="../paginas/politicas/privacidad.html" class="politicas"> Privacidad </a></li>
+                <li><a href="../paginas/politicas/cookies.html" class="politicas"> Cookies </a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- Scripts necesarios para algunas animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+
+</body>
+
+</html>
