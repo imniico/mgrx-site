@@ -217,6 +217,7 @@ hr {
     display: flex;
     justify-content: right;
     align-items: flex-start;
+    animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .tituloTopDer, .tituloBotDer{
@@ -228,6 +229,7 @@ hr {
 
     display: flex;
     align-items: flex-start;
+    animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 
