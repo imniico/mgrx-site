@@ -74,11 +74,10 @@
     filter: invert(0);
 }
 
-
-/* .cabecera .navbar .active {
+.bg-light .nav-item .active{
     filter: drop-shadow(1px 1px 10px hsl(261, 74%, 38%));
     color: hsl(261, 74%, 38%);
-} */
+}
 
 
 
@@ -165,8 +164,6 @@ hr {
     transition: 0.5s all;
     
 }
-
-
 
 .vertNav .circulos img{
     height: 15px;
@@ -1340,20 +1337,6 @@ hr {
 
 /* ---------------- SECTION CONTACTO ---------------- */
 
-/* .contacto {
-    background-image: url("multimedia/imagenes/fondobn2.png");
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    padding: 2% 10%;
-    
-} */
-
 .contacto{
     background-image: url("multimedia/imagenes/fondobn2.png");
     background-size: cover;
@@ -1453,7 +1436,6 @@ hr {
     border-radius: 3px;
     height: 30px;
     width: 100px;
-    font-size: 13px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
     border: none;
@@ -1473,146 +1455,6 @@ hr {
 .contacto input:hover, .contacto select:hover, .contacto textarea:hover {
     filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.3));
 }
-
-
-
-
-
-/* 
-
-
-.formContacto .botonEnviar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    margin-top: 20px;
-}
-
-
-
-.novedades {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    grid-area: novedades;
-}
-
-.novedadesIngreso {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-}
-
-.nombre{
-    width: 92%;
-}
-
-
-
-.novedadesIngreso input{
-    width: 80%;
-}
-
-.formContacto input, .novedadesIngreso input {
-    border-radius: 3px;
-    height: 35px;
-    font-size: 13px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500;
-    border: none;
-    color: white;
-    background-color: rgba(60, 60, 60, 0.5);
-    box-shadow: 1px 1px 15px black;
-    transition: 0.5s all;
-}
-
-.formContacto input::placeholder, .novedadesIngreso input::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.formContacto input, .novedadesIngreso input{
-    padding-left: 10px;
-}
-
-option {
-    color: rgba(255, 255, 255, 0.5);
-    background: rgba(60, 60, 60, 0.5);
-}
-
-.formContacto select {
-    border-radius: 3px;
-    height: 35px;
-    font-size: 13px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500;
-    border: none;
-    color: rgba(255, 255, 255, 0.5);
-    appearance: none;
-    box-shadow: 1px 1px 15px black;
-    transition: 0.5s all;
-    background: rgba(60, 60, 60, 0.5);
-    padding-left: 10px;
-}
-
-.formContacto textarea {
-    border-radius: 3px;
-    height: 150px;
-    font-size: 13px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500;
-    border: none;
-    color: white;
-    background-color: rgba(60, 60, 60, 0.5);
-    box-shadow: 1px 1px 15px black;
-    transition: 0.5s all;
-}
-
-.formContacto textarea::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 13px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500;
-}
-
-.formContacto textarea{
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-.formContacto button, .novedadesIngreso button {
-    border-radius: 3px;
-    height: 30px;
-    width: 15%;
-    font-size: 13px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500;
-    border: none;
-    color: white;
-    background-color: hsla(242, 90%, 27%, 0.3);
-    box-shadow: 1px 1px 15px black;
-    transition: 0.5s all;
-    margin-left: 5%;
-    cursor: pointer;
-}
-
-.formContacto button:hover, .novedadesIngreso button:hover {
-    background-color: hsla(250, 85%, 45%, 0.2);
-    transform: scale(1.1);
-    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.3));
-}
-
-.contacto input:hover, .contacto select:hover, .contacto textarea:hover {
-    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.3));
-}
- */
-
-
-
 
 
 /* ---------------- FOOTER ---------------- */
@@ -1814,24 +1656,6 @@ footer {
 /* TABLET Y CELULAR */
 @media only screen and (max-width: 960px){
 
-    /* HOME */
-    .gridContainerHome{
-        grid-template-rows: 20vh 10vh 10vh 20vh 10vh 10vh 20vh; 
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        'vacio'
-        'ti'
-        'bi'
-        'vacioc'
-        'td'
-        'bd'
-        'vaciof';
-    }
-    .tituloTopIzq, .tituloBotIzq, .tituloTopDer, .tituloBotDer{
-        justify-content: center;
-        align-items: center;
-    }
-
     /* DISCOGRAFIA */
     .filaCategoria iframe{
         width: 80vw;
@@ -1898,32 +1722,6 @@ footer {
         width: 50%;
     }
 
-
-    /* CONTACTO */
-    /* .contacto{
-        grid-template-rows: 65vh 50vh 15vh;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        'formCon'
-        'mapa'
-        'novedades';
-    }
-
-    .mapa{
-        padding:50px 0;
-    }
-
-    .formContacto{
-        padding: 0;
-    }
-
-    .novedades{
-        padding: 0 0 50px 0;
-    }
-
-    .formContacto h4{
-        font-size: 20px;
-    } */
 }
 
 /* SOLO CELULAR */
@@ -1978,22 +1776,6 @@ footer {
         width: 70%;
     }
 
-
-    /* CONTACTO */
-    /* .formContacto .nombrePais{
-        grid-template-columns: 1fr;
-        grid-template-rows: 10vh 10vh;
-        grid-template-areas: 
-        'nom'
-        'pais';
-    }
-    .nombre{
-        grid-area: nom;
-        width: 100%;
-    }
-    .pais{
-        grid-area: pais;
-    } */
 
 }
 
