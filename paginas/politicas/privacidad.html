@@ -12,40 +12,62 @@
     <!-- Link para el icono de la página web -->
     <link rel="shortcut icon" href="../../multimedia/imagenes/favicon.ico" type="image/x-icon">
 
+    <!-- Link a hoja de estilo de bootstrap -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous'>
+
     <!-- Link a hoja de estilo propia -->
     <link rel="stylesheet" href="../../style.css">
 
     <!-- Link a fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
 
     <!-- Link a hoja de estilo para algunas animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
 </head>
 
 
 <body>
-    <header class="cabecera">
 
-        <!-- Logo del Navbar -->
-        <a href="../../index.html"><img src="../../multimedia/imagenes/logov.png" alt="Logo Martin Garrix"
-                class="logonav"></a>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid ">
 
-        <!-- Barra de Navegación: Home, Galería, Discografía, Tienda, Contacto -->
-        <nav class="navbar">
-            <ul>
-                <li><a href="../../paginas/trayectoria.html"> Trayectoria </a></li>
-                <li><a href="../../paginas/discografia.html"> Discografía </a></li>
-                <li><a href="../../paginas/galeria.html"> Galería </a></li>
-                <li><a href="../../paginas/tienda.html"> Tienda </a></li>
-                <li><a href="../../paginas/contacto.html"> Contacto </a></li>
-            </ul>
-        </nav>
+            <a class="navbar-brand" href="../../index.html"> <img src="../../multimedia/imagenes/logov.png"
+                    alt="Logo Martin Garrix" height="50"> </a>
 
-    </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../../paginas/trayectoria.html">Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../paginas/discografia.html">Discografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../paginas/galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../paginas/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
 
     <!-- Section Política Privacidad -->
     <!-- Aclaración: las políticas son ficticias, solo las saqué de la página oficial como para rellenar con algo -->
@@ -54,73 +76,171 @@
         <h1> POLÍTICA DE PRIVACIDAD </h1>
         <h2> INTERPRETACIÓN Y DEFINICIONES </h2>
         <h3> INTERPRETACIÓN </h3>
-        <p> Las palabras cuya letra inicial está en mayúscula tienen significados definidos bajo las siguientes condiciones. Las siguientes definiciones tendrán el mismo significado independientemente de que aparezcan en singular o en plural.</p>
+        <p> Las palabras cuya letra inicial está en mayúscula tienen significados definidos bajo las siguientes
+            condiciones. Las siguientes definiciones tendrán el mismo significado independientemente de que aparezcan en
+            singular o en plural.</p>
         <h3> DEFINICIONES </h3>
         <p>A los efectos de esta Política de Privacidad: </p>
-        <p> ● Cuenta  significa una cuenta única creada para que Usted acceda a nuestro Servicio o partes de nuestro Servicio.</p>
-        <p> ● Negocios , a los efectos de la CCPA (Ley de Privacidad del Consumidor de California), se refiere a la Compañía como la entidad legal que recopila la información personal de los Consumidores y determina los propósitos y medios del procesamiento de la información personal de los Consumidores, o en nombre de la cual dicha se recopila la información y que solo, o junto con otros, determina los propósitos y medios del procesamiento de la información personal de los consumidores, que hace negocios en el Estado de California.</p>
-        <p> ● Empresa  (referida como "la Empresa", "Nosotros", "Nos" o "Nuestro" en este Acuerdo) se refiere a Martin Garrix BV, Heemraadschapslaan 100.
+        <p> ● Cuenta significa una cuenta única creada para que Usted acceda a nuestro Servicio o partes de nuestro
+            Servicio.</p>
+        <p> ● Negocios , a los efectos de la CCPA (Ley de Privacidad del Consumidor de California), se refiere a la
+            Compañía como la entidad legal que recopila la información personal de los Consumidores y determina los
+            propósitos y medios del procesamiento de la información personal de los Consumidores, o en nombre de la cual
+            dicha se recopila la información y que solo, o junto con otros, determina los propósitos y medios del
+            procesamiento de la información personal de los consumidores, que hace negocios en el Estado de California.
+        </p>
+        <p> ● Empresa (referida como "la Empresa", "Nosotros", "Nos" o "Nuestro" en este Acuerdo) se refiere a Martin
+            Garrix BV, Heemraadschapslaan 100.
             A los efectos del RGPD, la Empresa es el Controlador de datos.</p>
-        <p> ● Consumidor , a los efectos de la CCPA (Ley de Privacidad del Consumidor de California), significa una persona física que es residente de California. Un residente, tal como se define en la ley, incluye (1) toda persona que se encuentre en los EE. UU. por un motivo que no sea temporal o transitorio, y (2) toda persona domiciliada en los EE. UU. que se encuentre fuera de los EE. UU. por un motivo temporal o transitorio. finalidad transitoria.</p>
-        <p> ● Las cookies  son pequeños archivos que un sitio web coloca en su computadora, dispositivo móvil o cualquier otro dispositivo, y que contienen los detalles de su historial de navegación en ese sitio web entre sus muchos usos.</p>
-        <p> ● País  se refiere a: Países Bajos</p>
-        <p> ● Controlador de datos , a los efectos del RGPD (Reglamento General de Protección de Datos), se refiere a la Compañía como la persona jurídica que sola o junto con otras determina los propósitos y medios del procesamiento de Datos Personales.</p>
-        <p> ● Dispositivo  significa cualquier dispositivo que pueda acceder al Servicio, como una computadora, un teléfono celular o una tableta digital.</p>
-        <p> ● Do Not Track  (DNT) es un concepto que han promovido las autoridades reguladoras de EE. UU., en particular la Comisión Federal de Comercio (FTC) de EE. UU., para que la industria de Internet desarrolle e implemente un mecanismo que permita a los usuarios de Internet controlar el seguimiento de sus datos en línea. actividades en los sitios web.</p>
-        <p> ● Facebook Fan Page  es un perfil público denominado Martin Garrix creado específicamente por la Compañía en la red social Facebook, accesible desde  https://www.facebook.com/martin.garrix</p>
-        <p> ● Los datos personales  son cualquier información que se relaciona con un individuo identificado o identificable.
-            A los efectos del RGPD, los datos personales se refieren a cualquier información relacionada con usted, como un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más factores específicos del estado físico, fisiológico, genético, mental, económico, cultural o social. identidad.
-            A los efectos de la CCPA, los datos personales significan cualquier información que lo identifique, se relacione con, describa o pueda asociarse con, o podría vincularse razonablemente, directa o indirectamente, con usted.</p>
-        <p> ● Venta , a los efectos de la CCPA (Ley de Privacidad del Consumidor de California), significa vender, alquilar, divulgar, divulgar, difundir, poner a disposición, transferir o comunicar de otra manera oralmente, por escrito, por medios electrónicos o de otro tipo, la información personal de un Consumidor. a otra empresa o a un tercero a cambio de una contraprestación monetaria o de otro valor.</p>
-        <p> ● Servicio  se refiere al sitio web.</p>
-        <p> ● Proveedor de servicios  significa cualquier persona física o jurídica que procesa los datos en nombre de la Compañía. Se refiere a empresas de terceros o personas empleadas por la Empresa para facilitar el Servicio, proporcionar el Servicio en nombre de la Empresa, realizar servicios relacionados con el Servicio o ayudar a la Empresa a analizar cómo se utiliza el Servicio. A los efectos del RGPD, los Proveedores de servicios se consideran Procesadores de datos.</p>
-        <p> ● Servicio de redes sociales de terceros  se refiere a cualquier sitio web o sitio web de red social a través del cual un Usuario puede iniciar sesión o crear una cuenta para usar el Servicio.</p>
-        <p> ● Los Datos de uso  se refieren a los datos recopilados automáticamente, ya sea generados por el uso del Servicio o por la propia infraestructura del Servicio (por ejemplo, la duración de una visita a la página).</p>
-        <p> ● El sitio web  se refiere a Martin Garrix, accesible desde https://martingarrix.com</p>
-        <p> ● Usted  se refiere a la persona que accede o utiliza el Servicio, o la empresa u otra entidad legal en nombre de la cual dicha persona accede o utiliza el Servicio, según corresponda.
-            Según el RGPD (Reglamento general de protección de datos), se le puede hacer referencia como el Sujeto de los datos o como el Usuario, ya que es la persona que utiliza el Servicio.</p>
+        <p> ● Consumidor , a los efectos de la CCPA (Ley de Privacidad del Consumidor de California), significa una
+            persona física que es residente de California. Un residente, tal como se define en la ley, incluye (1) toda
+            persona que se encuentre en los EE. UU. por un motivo que no sea temporal o transitorio, y (2) toda persona
+            domiciliada en los EE. UU. que se encuentre fuera de los EE. UU. por un motivo temporal o transitorio.
+            finalidad transitoria.</p>
+        <p> ● Las cookies son pequeños archivos que un sitio web coloca en su computadora, dispositivo móvil o cualquier
+            otro dispositivo, y que contienen los detalles de su historial de navegación en ese sitio web entre sus
+            muchos usos.</p>
+        <p> ● País se refiere a: Países Bajos</p>
+        <p> ● Controlador de datos , a los efectos del RGPD (Reglamento General de Protección de Datos), se refiere a la
+            Compañía como la persona jurídica que sola o junto con otras determina los propósitos y medios del
+            procesamiento de Datos Personales.</p>
+        <p> ● Dispositivo significa cualquier dispositivo que pueda acceder al Servicio, como una computadora, un
+            teléfono celular o una tableta digital.</p>
+        <p> ● Do Not Track (DNT) es un concepto que han promovido las autoridades reguladoras de EE. UU., en particular
+            la Comisión Federal de Comercio (FTC) de EE. UU., para que la industria de Internet desarrolle e implemente
+            un mecanismo que permita a los usuarios de Internet controlar el seguimiento de sus datos en línea.
+            actividades en los sitios web.</p>
+        <p> ● Facebook Fan Page es un perfil público denominado Martin Garrix creado específicamente por la Compañía en
+            la red social Facebook, accesible desde https://www.facebook.com/martin.garrix</p>
+        <p> ● Los datos personales son cualquier información que se relaciona con un individuo identificado o
+            identificable.
+            A los efectos del RGPD, los datos personales se refieren a cualquier información relacionada con usted, como
+            un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más factores
+            específicos del estado físico, fisiológico, genético, mental, económico, cultural o social. identidad.
+            A los efectos de la CCPA, los datos personales significan cualquier información que lo identifique, se
+            relacione con, describa o pueda asociarse con, o podría vincularse razonablemente, directa o indirectamente,
+            con usted.</p>
+        <p> ● Venta , a los efectos de la CCPA (Ley de Privacidad del Consumidor de California), significa vender,
+            alquilar, divulgar, divulgar, difundir, poner a disposición, transferir o comunicar de otra manera
+            oralmente, por escrito, por medios electrónicos o de otro tipo, la información personal de un Consumidor. a
+            otra empresa o a un tercero a cambio de una contraprestación monetaria o de otro valor.</p>
+        <p> ● Servicio se refiere al sitio web.</p>
+        <p> ● Proveedor de servicios significa cualquier persona física o jurídica que procesa los datos en nombre de la
+            Compañía. Se refiere a empresas de terceros o personas empleadas por la Empresa para facilitar el Servicio,
+            proporcionar el Servicio en nombre de la Empresa, realizar servicios relacionados con el Servicio o ayudar a
+            la Empresa a analizar cómo se utiliza el Servicio. A los efectos del RGPD, los Proveedores de servicios se
+            consideran Procesadores de datos.</p>
+        <p> ● Servicio de redes sociales de terceros se refiere a cualquier sitio web o sitio web de red social a través
+            del cual un Usuario puede iniciar sesión o crear una cuenta para usar el Servicio.</p>
+        <p> ● Los Datos de uso se refieren a los datos recopilados automáticamente, ya sea generados por el uso del
+            Servicio o por la propia infraestructura del Servicio (por ejemplo, la duración de una visita a la página).
+        </p>
+        <p> ● El sitio web se refiere a Martin Garrix, accesible desde https://martingarrix.com</p>
+        <p> ● Usted se refiere a la persona que accede o utiliza el Servicio, o la empresa u otra entidad legal en
+            nombre de la cual dicha persona accede o utiliza el Servicio, según corresponda.
+            Según el RGPD (Reglamento general de protección de datos), se le puede hacer referencia como el Sujeto de
+            los datos o como el Usuario, ya que es la persona que utiliza el Servicio.</p>
 
         <h2> RECOPILACIÓN Y USO DE SUS DATOS PERSONALES </h2>
         <h3>INFORMACIÓN PERSONAL</h3>
-        <p>Mientras usa Nuestro Servicio, podemos pedirle que nos proporcione cierta información de identificación personal que se puede usar para contactarlo o identificarlo. La información de identificación personal puede incluir, entre otros: Datos de uso</p>
+        <p>Mientras usa Nuestro Servicio, podemos pedirle que nos proporcione cierta información de identificación
+            personal que se puede usar para contactarlo o identificarlo. La información de identificación personal puede
+            incluir, entre otros: Datos de uso</p>
         <h3>DATOS DE USO</h3>
         <p>Los Datos de uso se recopilan automáticamente cuando se utiliza el Servicio.</p>
-        <p>Los datos de uso pueden incluir información como la dirección del protocolo de Internet de su dispositivo (por ejemplo, la dirección IP), el tipo de navegador, la versión del navegador, las páginas de nuestro Servicio que visita, la hora y la fecha de su visita, el tiempo que pasa en esas páginas, dispositivo único identificadores y otros datos de diagnóstico.</p>
-        <p>Cuando accede al Servicio a través de un dispositivo móvil, podemos recopilar cierta información automáticamente, que incluye, entre otros, el tipo de dispositivo móvil que utiliza, la identificación única de su dispositivo móvil, la dirección IP de su dispositivo móvil, su sistema operativo, el tipo de navegador de Internet móvil que utiliza, identificadores únicos de dispositivos y otros datos de diagnóstico.</p>
-        <p>También podemos recopilar información que su navegador envía cada vez que visita nuestro Servicio o cuando accede al Servicio a través de un dispositivo móvil.</p>
+        <p>Los datos de uso pueden incluir información como la dirección del protocolo de Internet de su dispositivo
+            (por ejemplo, la dirección IP), el tipo de navegador, la versión del navegador, las páginas de nuestro
+            Servicio que visita, la hora y la fecha de su visita, el tiempo que pasa en esas páginas, dispositivo único
+            identificadores y otros datos de diagnóstico.</p>
+        <p>Cuando accede al Servicio a través de un dispositivo móvil, podemos recopilar cierta información
+            automáticamente, que incluye, entre otros, el tipo de dispositivo móvil que utiliza, la identificación única
+            de su dispositivo móvil, la dirección IP de su dispositivo móvil, su sistema operativo, el tipo de navegador
+            de Internet móvil que utiliza, identificadores únicos de dispositivos y otros datos de diagnóstico.</p>
+        <p>También podemos recopilar información que su navegador envía cada vez que visita nuestro Servicio o cuando
+            accede al Servicio a través de un dispositivo móvil.</p>
         <h3>TECNOLOGÍAS DE SEGUIMIENTO Y COOKIES</h3>
-        <p>Usamos Cookies y tecnologías de seguimiento similares para rastrear la actividad en Nuestro Servicio y almacenar cierta información. Las tecnologías de seguimiento utilizadas son balizas, etiquetas y scripts para recopilar y rastrear información y para mejorar y analizar Nuestro Servicio. Las tecnologías que utilizamos pueden incluir:</p>
-        <p>● Cookies o Cookies del Navegador.  Una cookie es un pequeño archivo que se coloca en su dispositivo. Puede indicar a su navegador que rechace todas las cookies o que indique cuándo se envía una cookie. Sin embargo, si no acepta las Cookies, es posible que no pueda utilizar algunas partes de nuestro Servicio. A menos que haya ajustado la configuración de su navegador para que rechace las Cookies, nuestro Servicio puede usar Cookies.</p>
-        <p>● Cookies Flash.  Ciertas características de nuestro Servicio pueden usar objetos almacenados localmente (o Flash Cookies) para recopilar y almacenar información sobre Sus preferencias o Su actividad en nuestro Servicio. Las cookies de Flash no se gestionan con la misma configuración del navegador que las utilizadas para las cookies del navegador.</p>
-        <p>● Balizas web.  Ciertas secciones de nuestro Servicio y nuestros correos electrónicos pueden contener pequeños archivos electrónicos conocidos como web beacons (también conocidos como gifs transparentes, etiquetas de píxeles y gifs de un solo píxel) que permiten a la Compañía, por ejemplo, contar los usuarios que han visitado esas páginas. o abrió un correo electrónico y para otras estadísticas relacionadas con el sitio web (por ejemplo, registrar la popularidad de una determinada sección y verificar la integridad del sistema y del servidor).</p>
-        <p>Las cookies pueden ser cookies "persistentes" o de "sesión". Las cookies persistentes permanecen en su computadora personal o dispositivo móvil cuando se desconecta, mientras que las cookies de sesión se eliminan tan pronto como cierra su navegador web.</p>
+        <p>Usamos Cookies y tecnologías de seguimiento similares para rastrear la actividad en Nuestro Servicio y
+            almacenar cierta información. Las tecnologías de seguimiento utilizadas son balizas, etiquetas y scripts
+            para recopilar y rastrear información y para mejorar y analizar Nuestro Servicio. Las tecnologías que
+            utilizamos pueden incluir:</p>
+        <p>● Cookies o Cookies del Navegador. Una cookie es un pequeño archivo que se coloca en su dispositivo. Puede
+            indicar a su navegador que rechace todas las cookies o que indique cuándo se envía una cookie. Sin embargo,
+            si no acepta las Cookies, es posible que no pueda utilizar algunas partes de nuestro Servicio. A menos que
+            haya ajustado la configuración de su navegador para que rechace las Cookies, nuestro Servicio puede usar
+            Cookies.</p>
+        <p>● Cookies Flash. Ciertas características de nuestro Servicio pueden usar objetos almacenados localmente (o
+            Flash Cookies) para recopilar y almacenar información sobre Sus preferencias o Su actividad en nuestro
+            Servicio. Las cookies de Flash no se gestionan con la misma configuración del navegador que las utilizadas
+            para las cookies del navegador.</p>
+        <p>● Balizas web. Ciertas secciones de nuestro Servicio y nuestros correos electrónicos pueden contener pequeños
+            archivos electrónicos conocidos como web beacons (también conocidos como gifs transparentes, etiquetas de
+            píxeles y gifs de un solo píxel) que permiten a la Compañía, por ejemplo, contar los usuarios que han
+            visitado esas páginas. o abrió un correo electrónico y para otras estadísticas relacionadas con el sitio web
+            (por ejemplo, registrar la popularidad de una determinada sección y verificar la integridad del sistema y
+            del servidor).</p>
+        <p>Las cookies pueden ser cookies "persistentes" o de "sesión". Las cookies persistentes permanecen en su
+            computadora personal o dispositivo móvil cuando se desconecta, mientras que las cookies de sesión se
+            eliminan tan pronto como cierra su navegador web.</p>
         <h3>USO DE SUS DATOS PERSONALES</h3>
         <p>La Compañía puede utilizar los Datos Personales para los siguientes fines:</p>
         <p>● Para proporcionar y mantener nuestro Servicio , incluso para monitorear el uso de nuestro Servicio.</p>
-        <p>● Para gestionar Su Cuenta:  para gestionar Su registro como usuario del Servicio. Los Datos Personales que proporcione pueden darle acceso a diferentes funcionalidades del Servicio que están disponibles para Usted como usuario registrado.</p>
-        <p>● Para la ejecución de un contrato:  el desarrollo, cumplimiento y realización del contrato de compra de los productos, artículos o servicios que haya adquirido o de cualquier otro contrato con Nosotros a través del Servicio.</p>
-        <p>● Para contactarlo:  Para contactarlo por correo electrónico, llamadas telefónicas, SMS u otras formas equivalentes de comunicación electrónica, tales como notificaciones automáticas de una aplicación móvil sobre actualizaciones o comunicaciones informativas relacionadas con las funcionalidades, productos o servicios contratados, incluidas las actualizaciones de seguridad, cuando sea necesario o razonable para su implementación.</p>
-        <p>● Para brindarle  noticias, ofertas especiales e información general sobre otros bienes, servicios y eventos que ofrecemos que son similares a los que ya compró o preguntó, a menos que haya optado por no recibir dicha información.</p>
-        <p>● Para gestionar sus solicitudes:  Para atender y gestionar Sus solicitudes hacia Nosotros.</p>
-        <p>● Para enviarle publicidad dirigida : podemos usar su información para desarrollar y mostrar contenido y publicidad (y trabajar con proveedores externos que lo hagan) adaptados a sus intereses y/o ubicación y para medir su eficacia.</p>
-        <p>● Para transferencias de negocios:  podemos usar su información para evaluar o realizar una fusión, desinversión, reestructuración, reorganización, disolución u otra venta o transferencia de algunos o todos nuestros activos, ya sea como una empresa en marcha o como parte de una quiebra, liquidación, o procedimiento similar, en el que los Datos personales que tenemos sobre los usuarios de nuestro Servicio se encuentran entre los activos transferidos.</p>
-        <p>● Para otros fines : podemos utilizar su información para otros fines, como el análisis de datos, la identificación de tendencias de uso, la determinación de la eficacia de nuestras campañas promocionales y para evaluar y mejorar nuestro Servicio, productos, servicios, marketing y su experiencia.</p>
+        <p>● Para gestionar Su Cuenta: para gestionar Su registro como usuario del Servicio. Los Datos Personales que
+            proporcione pueden darle acceso a diferentes funcionalidades del Servicio que están disponibles para Usted
+            como usuario registrado.</p>
+        <p>● Para la ejecución de un contrato: el desarrollo, cumplimiento y realización del contrato de compra de los
+            productos, artículos o servicios que haya adquirido o de cualquier otro contrato con Nosotros a través del
+            Servicio.</p>
+        <p>● Para contactarlo: Para contactarlo por correo electrónico, llamadas telefónicas, SMS u otras formas
+            equivalentes de comunicación electrónica, tales como notificaciones automáticas de una aplicación móvil
+            sobre actualizaciones o comunicaciones informativas relacionadas con las funcionalidades, productos o
+            servicios contratados, incluidas las actualizaciones de seguridad, cuando sea necesario o razonable para su
+            implementación.</p>
+        <p>● Para brindarle noticias, ofertas especiales e información general sobre otros bienes, servicios y eventos
+            que ofrecemos que son similares a los que ya compró o preguntó, a menos que haya optado por no recibir dicha
+            información.</p>
+        <p>● Para gestionar sus solicitudes: Para atender y gestionar Sus solicitudes hacia Nosotros.</p>
+        <p>● Para enviarle publicidad dirigida : podemos usar su información para desarrollar y mostrar contenido y
+            publicidad (y trabajar con proveedores externos que lo hagan) adaptados a sus intereses y/o ubicación y para
+            medir su eficacia.</p>
+        <p>● Para transferencias de negocios: podemos usar su información para evaluar o realizar una fusión,
+            desinversión, reestructuración, reorganización, disolución u otra venta o transferencia de algunos o todos
+            nuestros activos, ya sea como una empresa en marcha o como parte de una quiebra, liquidación, o
+            procedimiento similar, en el que los Datos personales que tenemos sobre los usuarios de nuestro Servicio se
+            encuentran entre los activos transferidos.</p>
+        <p>● Para otros fines : podemos utilizar su información para otros fines, como el análisis de datos, la
+            identificación de tendencias de uso, la determinación de la eficacia de nuestras campañas promocionales y
+            para evaluar y mejorar nuestro Servicio, productos, servicios, marketing y su experiencia.</p>
         <h3>RETENCIÓN DE SUS DATOS PERSONALES</h3>
-        <p>La Compañía conservará sus Datos personales solo durante el tiempo que sea necesario para los fines establecidos en esta Política de privacidad. Conservaremos y utilizaremos sus datos personales en la medida necesaria para cumplir con nuestras obligaciones legales (por ejemplo, si estamos obligados a conservar sus datos para cumplir con las leyes aplicables), resolver disputas y hacer cumplir nuestras políticas y acuerdos legales.</p>
-        <p>La Compañía también conservará los Datos de uso para fines de análisis interno. Los datos de uso generalmente se retienen por un período de tiempo más corto, excepto cuando estos datos se usan para fortalecer la seguridad o mejorar la funcionalidad de nuestro servicio, o cuando estamos legalmente obligados a retener estos datos por períodos de tiempo más largos.</p>
+        <p>La Compañía conservará sus Datos personales solo durante el tiempo que sea necesario para los fines
+            establecidos en esta Política de privacidad. Conservaremos y utilizaremos sus datos personales en la medida
+            necesaria para cumplir con nuestras obligaciones legales (por ejemplo, si estamos obligados a conservar sus
+            datos para cumplir con las leyes aplicables), resolver disputas y hacer cumplir nuestras políticas y
+            acuerdos legales.</p>
+        <p>La Compañía también conservará los Datos de uso para fines de análisis interno. Los datos de uso generalmente
+            se retienen por un período de tiempo más corto, excepto cuando estos datos se usan para fortalecer la
+            seguridad o mejorar la funcionalidad de nuestro servicio, o cuando estamos legalmente obligados a retener
+            estos datos por períodos de tiempo más largos.</p>
         <h3>TRANSFERENCIA DE SUS DATOS PERSONALES</h3>
-        <p>Su información, incluidos los Datos personales, se procesa en las oficinas operativas de la Compañía y en cualquier otro lugar donde se encuentren las partes involucradas en el procesamiento. Significa que esta información puede transferirse y mantenerse en computadoras ubicadas fuera de Su estado, provincia, país u otra jurisdicción gubernamental donde las leyes de protección de datos pueden diferir de las de Su jurisdicción.</p>
-        <p>Su consentimiento a esta Política de privacidad seguido de Su envío de dicha información representa Su acuerdo con esa transferencia.</p>
-        <p>La Compañía tomará todas las medidas razonablemente necesarias para garantizar que sus datos se traten de forma segura y de acuerdo con esta Política de privacidad y no se realizará ninguna transferencia de sus datos personales a una organización o país a menos que existan controles adecuados establecidos, incluida la seguridad de Sus datos y otra información personal.</p>
+        <p>Su información, incluidos los Datos personales, se procesa en las oficinas operativas de la Compañía y en
+            cualquier otro lugar donde se encuentren las partes involucradas en el procesamiento. Significa que esta
+            información puede transferirse y mantenerse en computadoras ubicadas fuera de Su estado, provincia, país u
+            otra jurisdicción gubernamental donde las leyes de protección de datos pueden diferir de las de Su
+            jurisdicción.</p>
+        <p>Su consentimiento a esta Política de privacidad seguido de Su envío de dicha información representa Su
+            acuerdo con esa transferencia.</p>
+        <p>La Compañía tomará todas las medidas razonablemente necesarias para garantizar que sus datos se traten de
+            forma segura y de acuerdo con esta Política de privacidad y no se realizará ninguna transferencia de sus
+            datos personales a una organización o país a menos que existan controles adecuados establecidos, incluida la
+            seguridad de Sus datos y otra información personal.</p>
     </section>
 
     <hr>
-    
+
     <!-- Footer con redes sociales y algunas políticas -->
     <footer>
 
         <!-- Redes Sociales del DJ y del sello discográfico: formados por 1 logo + 5 redes cada uno -->
-        <div class="socialfooter"  data-aos="fade" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+        <div class="socialfooter" data-aos="fade" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
 
             <div class="social">
 
@@ -180,10 +300,15 @@
 
     </footer>
 
+    <!-- Script para bootstrap -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2'
+        crossorigin='anonymous'></script>
+
     <!-- Scripts necesarios para algunas animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
-    
+
 </body>
 
 </html>

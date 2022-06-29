@@ -895,48 +895,27 @@ hr {
 
 /* ---------------- SECTION GALERIA ---------------- */
 
-/* .galeria {
-    background-image: url("multimedia/imagenes/fondobn2.png");
-    background-size: cover;
-    background-position: center;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 130vh;
-    padding: 5% 10%;
-} */
 
 .galeria{
-    display: grid;
-    grid-template-rows: 100vh;
-    grid-template-columns: 1fr 3fr;
-
-    grid-template-areas:
-    'filtro visualG'
-    'filtro visualG'
-    'filtro visualG'
-    'filtro visualG'
-    'filtro visualG'
-    'filtro visualG';
-
     background-image: url("multimedia/imagenes/fondobn2.png");
     background-size: cover;
     background-position: center;
-    padding: 5% 10%;
+    padding: 5% 8%;
+}
+
+.galeria p{
+    margin-bottom: 0;
 }
 
 
 .filtros {
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 0 2%;
     filter: drop-shadow(1px 1px 15px black);
-    grid-area: filtro;
 }
 
 .minmax {
@@ -944,6 +923,12 @@ hr {
     justify-content: flex-end;
 
     margin: 50px 50px 50px 0;
+}
+
+@media only screen and (max-width:992px){
+    .minmax{
+        margin: 10px 20px 10px 0;
+    }
 }
 
 .img > img {
@@ -966,7 +951,7 @@ hr {
 .nombrecat p {
     padding-left: 10px;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
     filter: drop-shadow(1px 1px 15px black);
@@ -983,9 +968,15 @@ hr {
     list-style: none;
 }
 
+.categoria ul .k14 {
+    border-left: hsl(261, 74%, 38%) 3px solid;
+    color: hsl(261, 74%, 38%);
+    font-weight: 800;
+}
+
 .categoria ul li {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
     color: hsl(0, 0%, 100%);
     padding: 0 0 0 10px;
@@ -1011,64 +1002,34 @@ hr {
 
     filter: drop-shadow(1px 1px 15px black);
 
-    grid-area: visualG;
 }
 
-.blur{
-    background-color: #ffffff0f;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 1%;
-    width: 80%;
-}
-
-.visualizacion p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 35px;
-    font-weight: 700;
-    color: hsl(0, 0%, 100%);
-    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
-}
-
-.imagenes {
-    /* display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-
-    height: 75%; */
-
-    display: grid;
-    grid-template-rows: repeat(4, 25vh);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-
-    padding: 30px 20px;
-}
-
-.imagenes > div {
-    /* width: 30%;
-    height: 20%;
-    margin: 10px 0;
-    border-radius: 2%;
-    border: 1px solid black;
-    transition: 0.5s all; */
-
-    transition: 0.5s all;
-    border-radius: 2%;
-}
-
-.imagenes img {
+.galeria .visualizacion img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 2%;
     cursor: pointer;
-    
+    aspect-ratio: 16/10;
+    transition: 0.5s all;
 }
+
+.galeria .visualizacion img:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px white);
+}
+
+
+.visualizacion p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
+    padding-bottom: 20px;
+}
+
 
 .paginado {
     display: flex;
@@ -1078,10 +1039,12 @@ hr {
     width: 30%;
     height: 5%;
 
+    margin-top: 50px;
+
     filter: drop-shadow(0px 0px 20px black);
 }
 
-.paginado img {
+.galeria .visualizacion .paginado img {
     height: 20px;
     width: 20px;
     filter: invert(100%);
@@ -1101,12 +1064,6 @@ hr {
     cursor: pointer;
 }
 
-.categoria ul .k14 {
-    border-left: hsl(261, 74%, 38%) 3px solid;
-    color: hsl(261, 74%, 38%);
-    font-weight: 800;
-}
-
 .paginado .n1 {
     border-bottom: hsl(261, 74%, 38%) 3px solid;
     color: hsl(261, 74%, 38%);
@@ -1124,47 +1081,19 @@ hr {
     transform: scale(1.1);
 }
 
-.visualizacion .imagenes > div:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 10px white);
-}
-
-
-
-
 
 /* ---------------- SECTION TIENDA ---------------- */
 
-/* .tienda {
-    background-image: url("multimedia/imagenes/fondobn2.png");
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 130vh;
-    padding: 5% 10%;
-} */
 
 .tienda{
-    display: grid;
-    grid-template-rows: 150vh;
-    grid-template-columns: 1fr 3fr;
-
-    grid-template-areas:
-    'filtro visualT'
-    'filtro visualT'
-    'filtro visualT'
-    'filtro visualT'
-    'filtro visualT'
-    'filtro visualT';
-
     background-image: url("multimedia/imagenes/fondobn2.png");
     background-size: cover;
     background-position: center;
-    padding: 5% 10%;
+    padding: 5% 8%;
+}
+
+.tienda p{
+    margin-bottom: 0;
 }
 
 .tiendaVisualizacion {
@@ -1178,7 +1107,16 @@ hr {
 
     filter: drop-shadow(1px 1px 15px black);
 
-    grid-area: visualT;
+}
+
+@media only screen and (max-width:576px){
+    .tienda .tiendaVisualizacion{
+        padding: 0;
+    }
+    .tienda .tiendaVisualizacion .row{
+        padding: 30px 0;
+    }
+
 }
 
 .tiendaCabecera {
@@ -1210,99 +1148,62 @@ hr {
     cursor: pointer;
 }
 
-.tiendaElementos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-    height: 80%;
-}
 
-.tiendaItem {
-    display: grid;
-    grid-template-rows: 20vh;
-    grid-template-columns: 2fr 4fr 1fr;
-}
-
-.itemImagenes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 90%;
-    height: 100%;
-}
-
-.itemImagenes img {
-    width: 60%;
-    transition: 0.5s all;
+.tienda .tiendaVisualizacion .ropa img{
+    width: 130px;
     aspect-ratio: 4/6;
+    transition: 0.5s all;
     cursor: pointer;
 }
 
-.tiendaItem h4 {
+.tienda .tiendaVisualizacion h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
     color: hsl(0, 0%, 100%);
     filter: drop-shadow(1px 1px 15px black);
 }
 
-.tiendaItem h5 {
+.tienda .tiendaVisualizacion h5 {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
     color: hsl(0, 0%, 100%);
     filter: drop-shadow(1px 1px 15px black);
 }
 
-.nombrePrecio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    padding-left: 5%;
-}
-
-.agregar {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-
-    height: 100%;
-}
-
-.agregar > img{
+.tienda .tiendaVisualizacion .add img{
     width: 35px;
     filter: drop-shadow(1px 1px 15px white) invert(100%);
     transition: 0.5s all;
     cursor: pointer;
 }
 
-.tiendaCabecera img:hover, .itemImagenes img:hover {
+.tienda .tiendaVisualizacion .paginado img {
+    height: 20px;
+    width: 20px;
+    filter: invert(100%);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+
+.tiendaCabecera img:hover{
     transform: scale(1.2);
 }
 
-.agregar > img:hover {
+.add img:hover {
     transform: rotate(180deg) scale(1.1);
 }
 
-.itemImagenes:hover img {
+.ropa:hover img {
     filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.5));
 }
 
-.imgblur {
-    background-color: rgba(255, 255, 255, 0.3);
-    left: 0;
-    right: 0;
-    z-index: 1;
-    display: block;
-    width: 3px;
-    height: 100%;
-    filter: blur(2px);
+.ropa img:hover{
+    transform: scale(1.1);
 }
-
 
 
 
@@ -1623,133 +1524,6 @@ footer {
     filter: drop-shadow(1px 1px 15px black);
     transition: 0.5s all;
     width: 60%;
-}
-
-
-/* TABLET Y CELULAR */
-@media only screen and (max-width: 960px){
-
-    /* DISCOGRAFIA */
-    .filaCategoria iframe{
-        width: 80vw;
-        margin: 30px 0 20px 0;
-    }
-    .listasS{
-        grid-template-rows: 420px;
-        grid-template-columns: 1fr;
-    }
-    .listasEP{
-        grid-template-rows: 420px 420px 420px;
-        grid-template-columns: 1fr;
-    }
-    .listasA{
-        grid-template-rows: 420px 420px;
-        grid-template-columns: 1fr;
-    }
-
-
-    /* GALERIA */
-    .imgblur{
-        display: none;
-    }
-    .galeria{
-        grid-template-rows: 60vh 180vh;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        'filtro'
-        'visualG';
-        gap:50px;
-    }
-    .imagenes{
-        grid-template-rows: repeat(6, 25vh);
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .visualizacion > p{
-        text-align:center ;
-    }
-    .filtros img{
-        transform: rotate(90deg);
-    }
-
-
-    /* TIENDA */
-    .tienda{
-        grid-template-rows: 60vh 180vh;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        'filtro'
-        'visualT';
-        gap: 50px;
-    }
-    .tiendaVisualizacion{
-        padding: 0;
-        width: 100%;
-    }
-    .itemImagenes img:last-child{
-        display: none;
-    }
-    .itemImagenes img{
-        width: 100%;
-    }
-    .paginado{
-        width: 50%;
-    }
-
-}
-
-/* SOLO CELULAR */
-
-@media only screen and (max-width:480px){
-
-    /* GALERIA */
-    .galeria{
-        grid-template-rows: 75vh 350vh;
-    }
-    .imagenes{
-        grid-template-rows: repeat(12, 25vh);
-        grid-template-columns: 1fr;
-    }
-    .visualizacion > p{
-        text-align:center;
-    }
-
-
-    /* TIENDA */
-    .tienda{
-        grid-template-rows: 60vh 300vh;
-    }
-    .tiendaItem{
-        grid-template-rows: 20vh 20vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        'img img'
-        'np agg';
-        justify-items: center ;
-    }
-    .tiendaVisualizacion{
-        justify-content: space-around;
-    }
-    .itemImagenes{
-        grid-area: img;
-    }
-    .nombrePrecio{
-        grid-area: np;
-    }
-    .agregar{
-        grid-area: agg;
-        width: 100%;
-    }
-    .tiendaItem h4{
-        font-size: 20px;
-    }
-    .tiendaItem h5{
-        font-size: 15px;
-    }
-    .itemImagenes img{
-        width: 70%;
-    }
-
-
 }
 
 

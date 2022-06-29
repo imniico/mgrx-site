@@ -12,13 +12,18 @@
     <!-- Link para el icono de la página web -->
     <link rel="shortcut icon" href="../../multimedia/imagenes/favicon.ico" type="image/x-icon">
 
+    <!-- Link a hoja de estilo de bootstrap -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous'>
+
     <!-- Link a hoja de estilo propia -->
     <link rel="stylesheet" href="../../style.css">
 
     <!-- Link a fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
 
     <!-- Link a hoja de estilo para algunas animaciones -->
@@ -28,22 +33,40 @@
 
 
 <body>
-    <header class="cabecera">
-        <!-- Logo del Navbar -->
-        <a href="../../index.html"><img src="../../multimedia/imagenes/logov.png" alt="Logo Martin Garrix"
-                class="logonav"></a>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid ">
 
-        <!-- Barra de Navegación: Home, Galería, Discografía, Tienda, Contacto -->
-        <nav class="navbar">
-            <ul>
-                <li><a href="../../paginas/trayectoria.html"> Trayectoria </a></li>
-                <li><a href="../../paginas/discografia.html"> Discografía </a></li>
-                <li><a href="../../paginas/galeria.html"> Galería </a></li>
-                <li><a href="../../paginas/tienda.html"> Tienda </a></li>
-                <li><a href="../../paginas/contacto.html"> Contacto </a></li>
-            </ul>
-        </nav>
-    </header>
+            <a class="navbar-brand" href="../../index.html"> <img src="../../multimedia/imagenes/logov.png"
+                    alt="Logo Martin Garrix" height="50"> </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../../paginas/trayectoria.html">Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../paginas/discografia.html">Discografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../paginas/galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../paginas/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
 
     <!-- Section Política Cookies -->
     <!-- Aclaración: las políticas son ficticias, solo las saqué de la página oficial como para rellenar con algo -->
@@ -58,7 +81,8 @@
             singular o en plural. </p>
         <h3> DEFINICIONES </h3>
         <p> A los efectos de esta Política de Cookies: </p>
-        <p> ● Empresa (referida como "la Empresa", "Nosotros", "Nos" o "Nuestro" en esta Política de Cookies) se refiere a
+        <p> ● Empresa (referida como "la Empresa", "Nosotros", "Nos" o "Nuestro" en esta Política de Cookies) se refiere
+            a
             Martin Garrix BV, Heemraadschapslaan 100.</p>
         <p>
             ● Las cookies significan pequeños archivos que un sitio web coloca en su computadora, dispositivo móvil o
@@ -75,7 +99,9 @@
 
         <h2> EL USO DE LAS COOKIES </h2>
         <h3> TIPOS DE COOKIES QUE UTILIZAMOS </h3>
-        <p> Las cookies pueden ser cookies "persistentes" o de "sesión". Las cookies persistentes permanecen en su computadora personal o dispositivo móvil cuando se desconecta, mientras que las cookies de sesión se eliminan tan pronto como cierra su navegador web. </p>
+        <p> Las cookies pueden ser cookies "persistentes" o de "sesión". Las cookies persistentes permanecen en su
+            computadora personal o dispositivo móvil cuando se desconecta, mientras que las cookies de sesión se
+            eliminan tan pronto como cierra su navegador web. </p>
         <p> Utilizamos cookies de sesión y persistentes para los fines que se describen a continuación: </p>
         <p> ● Cookies necesarias/esenciales </p>
         <p> ● Política de Cookies / Aceptación de Aviso</p>
@@ -84,9 +110,13 @@
         <p> ● Cookies de orientación y publicidad </p>
 
         <h3> SUS OPCIONES CON RESPECTO A LAS COOKIES </h3>
-        <p> Si prefiere evitar el uso de Cookies en el Sitio Web, primero debe deshabilitar el uso de Cookies en su navegador y luego eliminar las Cookies guardadas en su navegador asociadas a este sitio web. Puede utilizar esta opción para impedir el uso de Cookies en cualquier momento. </p>
-        <p> Si no acepta Nuestras cookies, es posible que experimente algunos inconvenientes en el uso del sitio web y que algunas funciones no funcionen correctamente. </p>
-        <p>Si desea eliminar las cookies o indicar a su navegador web que elimine o rechace las cookies, visite las páginas de ayuda de su navegador web.</p>
+        <p> Si prefiere evitar el uso de Cookies en el Sitio Web, primero debe deshabilitar el uso de Cookies en su
+            navegador y luego eliminar las Cookies guardadas en su navegador asociadas a este sitio web. Puede utilizar
+            esta opción para impedir el uso de Cookies en cualquier momento. </p>
+        <p> Si no acepta Nuestras cookies, es posible que experimente algunos inconvenientes en el uso del sitio web y
+            que algunas funciones no funcionen correctamente. </p>
+        <p>Si desea eliminar las cookies o indicar a su navegador web que elimine o rechace las cookies, visite las
+            páginas de ayuda de su navegador web.</p>
 
     </section>
 
@@ -96,7 +126,7 @@
     <footer>
 
         <!-- Redes Sociales del DJ y del sello discográfico: formados por 1 logo + 5 redes cada uno -->
-        <div class="socialfooter"  data-aos="fade" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+        <div class="socialfooter" data-aos="fade" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
 
             <div class="social">
 
@@ -155,6 +185,11 @@
         </div>
 
     </footer>
+
+    <!-- Script para bootstrap -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2'
+        crossorigin='anonymous'></script>
 
     <!-- Scripts necesarios para algunas animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
