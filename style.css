@@ -875,6 +875,10 @@ hr {
     transition: 0.5s all;
 }
 
+.discografia h2:hover{
+    filter: drop-shadow(0px 0px 40px white);
+}
+
 .discografia iframe{
     height: 400px;
     width: 100%;
@@ -884,50 +888,9 @@ hr {
     transition: 0.5s all;
 }
 
-
-
-/* .filaCategoria {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    width: 100%;
-    padding-bottom: 20px;
-}
-
-.contDiscografia h2 {
-    color: white;
-    font-size: 60px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 800;
-    filter: drop-shadow(1px 1px 15px black);
-    transition: 0.5s all;
-}
-
-.contDiscografia iframe {
-    height: 400px;
-    width: 25vw;
-    margin: 20px 25px 60px 0;
-    box-shadow: 1px 1px 15px black;
-    border-radius: 5%;
-    transition: 0.5s all;
-}
-
-
-.listasS, .listasEP, .listasA{
-    display: grid;
-    grid-template-rows: 450px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.filaCategoria iframe:hover {
+.discografia iframe:hover {
     transform: scale(1.02);
-    
 }
-
-.filaCategoria>h2:hover {
-    filter: drop-shadow(0px 0px 40px white);
-} */
 
 
 /* ---------------- SECTION GALERIA ---------------- */
