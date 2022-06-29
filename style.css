@@ -120,6 +120,9 @@ hr {
     animation: text-pop-up-top 0.5s ease-in-out both;
 }
 
+.tituloTopIzq:hover, .tituloTopDer:hover, .tituloBotIzq:hover, .tituloBotDer:hover{
+    animation: text-pop-up-top 0.5s ease-in-out both;
+}
 
 
 /* ---------------- SECTION TRAYECTORIA ---------------- */
