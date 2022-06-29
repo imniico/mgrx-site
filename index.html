@@ -12,13 +12,18 @@
     <!-- Link para el icono de la página web -->
     <link rel="shortcut icon" href="multimedia/imagenes/favicon.ico" type="image/x-icon">
 
+    <!-- Link a hoja de estilo de bootstrap -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous'>
+
     <!-- Link a hoja de estilo propia -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Link a fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
 
     <!-- Link a hoja de estilo para algunas animaciones -->
@@ -27,14 +32,13 @@
 </head>
 
 <body>
-    
-    <!-- Header con Navbar -->
-    <header class="cabecerahome">
 
-        <!-- Logo en el Navbar, redirecciona al Home -->
+    <!-- Header con Navbar -->
+    <!-- <header class="cabecerahome">
+        Logo en el Navbar, redirecciona al Home
         <a href="index.html"> <img src="multimedia/imagenes/logovb.png" alt="Logo Martin Garrix" class="logonav"></a>
 
-        <!-- Barra de Navegación: Trayectoria, Galería, Discografía, Tienda, Contacto -->
+        Barra de Navegación: Trayectoria, Galería, Discografía, Tienda, Contacto
         <nav class="navbar">
             <ul>
                 <li><a href="paginas/trayectoria.html"> Trayectoria </a></li>
@@ -44,29 +48,66 @@
                 <li><a href="paginas/contacto.html"> Contacto </a></li>
             </ul>
         </nav>
+    </header> -->
 
-    </header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
 
-    <!-- Div con fondo gradiente y el section Home -->
-    <div class="gradient"> <!-- gradient -->
-        <div class="gridContainerHome">
-            <div class="espacio"></div>
-            <div class="espacioc"></div>
-            <div class="espaciof"></div>
-            <div class="tituloTopIzq">MARTIN</div>
-            <div class="tituloBotIzq">GARRIX</div>
-            <div class="tituloTopDer">DJ &</div>
-            <div class="tituloBotDer">Producer</div>            
+            <a class="navbar-brand" href="index.html"> <img src="multimedia/imagenes/logovb.png" alt="Logo Martin Garrix" height="50"> </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="paginas/trayectoria.html">Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/discografia.html">Discografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- HOME -->
+    <div class="gradient-home">
+        <div class="container-fluid home">
+            <div class="row h-100">
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="titulo">MARTIN</h2>
+                    <h2 class="titulo">GARRIX</h2>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="titulo">DJ &</h2>
+                    <h2 class="titulo">Producer</h2>
+                </div>
+            </div>
         </div>
     </div>
 
-    <hr>
 
-    <!-- Footer con redes sociales y algunas políticas -->
+
+    <!-- FOOTER -->
     <footer>
 
         <!-- Redes Sociales del DJ y del sello discográfico: formados por 1 logo + 5 redes cada uno -->
-        <div class="socialfooter"  data-aos="fade" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+        <div class="socialfooter" data-aos="fade" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
 
             <div class="social">
 
@@ -86,7 +127,7 @@
                     <li><a href="https://open.spotify.com/artist/60d24wfXkVzDSfLS6hyCjZ" target="_blank"><img
                                 src="multimedia/imagenes/spotify.png" alt=""></a></li>
                 </ul>
-                
+
             </div>
 
             <div class="social">
@@ -125,10 +166,15 @@
 
     </footer>
 
+    <!-- Script para bootstrap -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2'
+        crossorigin='anonymous'></script>
+
     <!-- Scripts necesarios para algunas animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
-    
+
 </body>
 
 </html>

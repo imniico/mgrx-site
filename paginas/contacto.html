@@ -12,6 +12,10 @@
     <!-- Link para el icono de la página web -->
     <link rel="shortcut icon" href="../multimedia/imagenes/favicon.ico" type="image/x-icon">
 
+    <!-- Link a hoja de estilo de bootstrap -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous'>
+
     <!-- Link a hoja de estilo propia -->
     <link rel="stylesheet" href="../style.css">
 
@@ -29,137 +33,183 @@
 
 <body>
 
-    <!-- Header con Navbar -->
-    <header class="cabecera">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid ">
 
-        <!-- Logo en el Navbar, redirecciona al Home -->
-        <a href="../index.html"><img src="../multimedia/imagenes/logov.png" alt="Logo Martin Garrix"
-                class="logonav"></a>
+            <a class="navbar-brand" href="../index.html"> <img src="../multimedia/imagenes/logov.png"
+                    alt="Logo Martin Garrix" height="50"> </a>
 
-        <!-- Barra de Navegación: Trayectoria, Galería, Discografía, Tienda, Contacto -->
-        <nav class="navbar">
-            <ul>
-                <li><a href="../paginas/trayectoria.html"> Trayectoria </a></li>
-                <li><a href="../paginas/discografia.html"> Discografía </a></li>
-                <li><a href="../paginas/galeria.html"> Galería </a></li>
-                <li><a href="../paginas/tienda.html"> Tienda </a></li>
-                <li><a href="../paginas/contacto.html" class="active"> Contacto </a></li>
-            </ul>
-        </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    </header>
-
-    <!-- Section Contacto -->
-    <section class="contacto">
-
-        <!-- Contenedor del formulario para el contacto y el mapa -->
-        <!-- <div class="contactoMapa"> -->
-
-
-
-
-
-        <div class="formContacto">
-
-            <h2> CONTACTO </h2>
-
-            <!-- Formulario -->
-            <form action="POST">
-
-                <!-- Input Nombre y Select País -->
-                <div class="nombrePais">
-                    <div class="nombre">
-                        <h4> Nombre Completo </h4>
-                        <input type="text" name="" id="" placeholder="Ingrese nombre y apellido ...">
-                    </div>
-
-                    <div class="pais">
-                        <h4>País</h4>
-                        <select name="" id="">
-                            <option value="" disabled selected hidden> Seleccione un país ... </option>
-                            <option value="">Argentina</option>
-                            <option value="">Bolivia</option>
-                            <option value="">Brasil</option>
-                            <option value="">Chile</option>
-                            <option value="">Colombia</option>
-                            <option value="">Ecuador</option>
-                            <option value="">Uruguay</option>
-                            <option value="">Otro</option>
-                            <!-- y más opciones -->
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Input Email -->
-                <div class="email">
-                    <h4> Email </h4>
-                    <input type="text" name="" id="" placeholder="Ingrese un email ...">
-                </div>
-
-                <!-- Select Motivo -->
-                <div class="motivo">
-                    <h4> Asunto </h4>
-                    <select name="" id="">
-                        <option value="" disabled selected hidden> Seleccione un asunto ... </option>
-                        <option value="">Shows</option>
-                        <option value="">Merchandising</option>
-                        <option value="">Errores en la web</option>
-                        <option value="">Términos y condiciones</option>
-                        <option value="">Politica de privacidad</option>
-                        <option value="">Política de cookies</option>
-                        <option value="">Otro</option>
-                        <!-- y más opciones -->
-                    </select>
-                </div>
-
-                <!-- Textarea Mensaje -->
-                <div class="mensaje">
-                    <h4> Mensaje </h4>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese un mensaje ... "></textarea>
-                </div>
-
-                <!-- Botones para limpiar el formulario o enviarlo -->
-                <div class="botonEnviar">
-                    <button type="reset"> Limpiar </button>
-                    <button type="submit"> Enviar </button>
-                </div>
-
-            </form>
-
-        </div>
-
-
-
-        <!-- Iframe del mapa -->
-        <div class="mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.94111208715!2d4.924886517443848!3d52.335214400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60b1bfe6edd15%3A0x92b9c1a66e2f32b6!2sSTMPD%20RCRDS!5e0!3m2!1ses!2sar!4v1654390902457!5m2!1ses!2sar"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-
-
-
-        <!-- Contenedor para novedades -->
-        <div class="novedades">
-            <h2> NOVEDADES </h2>
-
-            <!-- Input y botón para suscribirse -->
-            <div class="novedadesIngreso">
-                <input type="text" name="" id="" placeholder="Ingrese un email ...">
-                <button type="submit"> Suscribirse </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../paginas/trayectoria.html">Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/discografia.html">Discografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
+
+        </div>
+    </nav>
+
+    <!-- CONTACTO -->
+    <div class="container-fluid contacto d-flex flex-column justify-content-around gap-2">
+        <div class="row h-100 gy-5">
+
+            <div class="col-xl-12 col-xxl-6">
+
+                <h2> CONTACTO </h2>
+
+                <!-- INICIO Formulario -->
+                <form action="POST">
+
+                    
+                        <!-- Input Nombre y Select País -->
+                        <div class="row">
+                            <div class="col-sm-12 col-md-8">
+                                <div class="mb-3">
+                                    <label for="" class="form-label text-light">Nombre Completo</label>
+                                    <input type="text" class="form-control" aria-describedby="helpId"
+                                        placeholder="Ingrese nombre y apellido...">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="mb-3">
+                                    <label for="" class="form-label text-light">País</label>
+                                    <select class="form-select" name="" id="">
+                                        <option selected hidden disabled>Seleccione un país...</option>
+                                        <option value="">Argentina</option>
+                                        <option value="">Bolivia</option>
+                                        <option value="">Brasil</option>
+                                        <option value="">Chile</option>
+                                        <option value="">Colombia</option>
+                                        <option value="">Ecuador</option>
+                                        <option value="">Uruguay</option>
+                                        <option value="">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Input Email -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="" class="form-label text-light">Email</label>
+                                    <input type="text" class="form-control" aria-describedby="helpId"
+                                        placeholder="Ingrese email...">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Select Motivo -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="" class="form-label text-light">Asunto</label>
+                                    <select class="form-select" name="" id="">
+                                        <option selected hidden disabled>Seleccione un asunto...</option>
+                                        <option value="">Shows</option>
+                                        <option value="">Merchandising</option>
+                                        <option value="">Errores en la web</option>
+                                        <option value="">Términos y condiciones</option>
+                                        <option value="">Politica de privacidad</option>
+                                        <option value="">Política de cookies</option>
+                                        <option value="">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Textarea Mensaje -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="" class="form-label text-light">Mensaje</label>
+                                    <textarea class="form-control" placeholder="Ingrese el mensaje..." rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botones para limpiar el formulario o enviarlo -->
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="reset"> Limpiar </button>
+                                <button type="submit"> Enviar </button>
+                            </div>
+                        </div>
+                  
+
+                </form>
+                <!-- FIN Formulario -->
+
+
+            </div>
+
+            <div class="col-xl-12 col-xxl-6">
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.94111208715!2d4.924886517443848!3d52.335214400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60b1bfe6edd15%3A0x92b9c1a66e2f32b6!2sSTMPD%20RCRDS!5e0!3m2!1ses!2sar!4v1654390902457!5m2!1ses!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+
+            <div class="col-xl-12 col-xxl-6">
+                <h2> NOVEDADES </h2>
+
+                <form action="POST">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="" class="form-label text-light">Email</label>
+                                <input type="text" class="form-control" aria-describedby="helpId"
+                                    placeholder="Ingrese email...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="submit"> Suscribirse </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
         </div>
 
 
+        
+           
+        
 
 
-        <!-- </div> -->
 
 
 
 
-    </section>
+    </div>
 
     <hr>
 
@@ -222,6 +272,11 @@
         </div>
 
     </footer>
+
+    <!-- Script para bootstrap -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2'
+        crossorigin='anonymous'></script>
 
     <!-- Scripts necesarios para algunas animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
