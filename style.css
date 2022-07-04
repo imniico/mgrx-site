@@ -7,8 +7,6 @@
 }
 
 
-
-
 /* ---------------- NAVBAR ---------------- */
 
 .navbar > div{
@@ -135,8 +133,7 @@ hr {
     flex-direction: column;
     justify-content: space-between;
 
-    height: 1350vh;
-    padding: 5% 10%;
+    padding: 5% 8%;
 
     position: relative;
 }
@@ -153,15 +150,19 @@ hr {
     
     height: 80vh;
     width: 15%;
+
+    z-index: 200;
+
 }
 
 .vertNav .circulos{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 40%;
+    height: 30%;
 
     transition: 0.5s all;
+    
     
 }
 
@@ -170,6 +171,8 @@ hr {
     width: 20px;
     filter: invert(100%) opacity(50%);
     padding-left: 5px;
+
+    transition: 0.5s all;
 }
 
 .vertNav .verticalNav{
@@ -181,11 +184,17 @@ hr {
 
     display: none;
     list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    
 }
 
 .verticalNav li{
     padding-left: 10px;
     transition: 0.5s all;
+    
 }
 
 .verticalNav li a{
@@ -206,10 +215,13 @@ hr {
 
 .vertNav:hover .circulos{
     height: 60%;
+    
 }
 
 .vertNav:hover .circulos img{
     filter: invert(100%) opacity(100%);
+    height: 22px;
+    width: 27px;
 }
 
 .verticalNav li:hover{
@@ -221,636 +233,80 @@ hr {
 }
 
 
-.containerFila {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    width: 80vw;
-    height: 50vh;
-}
+/* TRAYECTORIA */
 
-#intro{
-    position: absolute;
-    top: 0;
-    z-index: -100;
-}
-
-.primeraFila {
-    background-image: url("multimedia/imagenes/garrixsuperior.png");
-    background-position: left;
-    background-size: 42vw;
-    background-repeat: no-repeat;
+.trayectoria .row img{
     aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 1%;
-    z-index: 100;
-
-    transition: 0.5s all; 
+    width: 100%;
 }
 
-#primero{
-    position: absolute;
-    top: 4.2%;
-    z-index: -100;
-}
-
-.primerTitulo{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 5%;
-    z-index: 80;
-    height: 8vh;
-}
-
-.segundaFila {
-    background-image: url("multimedia/imagenes/garrix1.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 6%;
-    z-index: 12;
-
-    transition: 0.5s all;
-}
-
-.terceraFila {
-    background-image: url("multimedia/imagenes/tiesto1.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 9%;
-    z-index: 13;
-
-    transition: 0.5s all;
-}
-
-.cuartaFila {
-    background-image: url("multimedia/imagenes/tiesto2.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 12%;
-    z-index: 14;
-
-    transition: 0.5s all;
-}
-
-.quintaFila {
-    background-image: url("multimedia/imagenes/herman.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 15%;
-    z-index: 15;
-
-    transition: 0.5s all;
-}
-
-.sextaFila{
-    background-image: url("multimedia/imagenes/itsa.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 18%;
-    z-index: 16;
-
-    transition: 0.5s all;
-}
-
-.septimaFila{
-    background-image: url("multimedia/imagenes/keygen.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 21%;
-    z-index: 17;
-
-    transition: 0.5s all;
-}
-
-.octavaFila{
-    background-image: url("multimedia/imagenes/garrixjordan.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 24%;
-    z-index: 18;
-
-    transition: 0.5s all;
-}
-
-#segundo{
-    position: absolute;
-    top: 27.2%;
-    z-index: -100;
-}
-
-.segundoTitulo{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 28%;
-    z-index: 80;
-    height: 8vh;
-}
-
-.novenaFila{
-    background-image: url("multimedia/imagenes/bfam.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 29%;
-    z-index: 19;
-
-    transition: 0.5s all;
-}
-
-.decimaFila{
-    background-image: url("multimedia/imagenes/registrationcode.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 32%;
-    z-index: 20;
-
-    transition: 0.5s all;
-}
-
-.unDecima{
-    background-image: url("multimedia/imagenes/torrent.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 35%;
-    z-index: 21;
-
-    transition: 0.5s all;
-}
-
-.duoDecima{
-    background-image: url("multimedia/imagenes/error404.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 38%;
-    z-index: 22;
-
-    transition: 0.5s all;
-}
-
-.decimoTercera{
-    background-image: url("multimedia/imagenes/justsomeloops.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 41%;
-    z-index: 23;
-
-    transition: 0.5s all;
-}
-
-#tercero{
-    position: absolute;
-    top: 44.2%;
-    z-index: -100;
-}
-
-.tercerTitulo{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 45%;
-    z-index: 80;
-    height: 8vh;
-}
-
-
-.decimoCuarta{
-    background-image: url("multimedia/imagenes/animals1.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 46%;
-    z-index: 24;
-
-    transition: 0.5s all;
-}
-
-.decimoQuinta{
-    background-image: url("multimedia/imagenes/animals2.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 49%;
-    z-index: 25;
-
-    transition: 0.5s all;
-}
-
-#cuarto{
-    position: absolute;
-    top: 52.2%;
-    z-index: -100;
-}
-
-.cuartoTitulo{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 53%;
-    z-index: 80;
-    height: 8vh;
-}
-
-.decimoSexta{
-    background-image: url("multimedia/imagenes/garrixultra2014.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 54%;
-    z-index: 26;
-
-    transition: 0.5s all;
-}
-
-.decimoSeptima{
-    background-image: url("multimedia/imagenes/garrixusher.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 57%;
-    z-index: 27;
-
-    transition: 0.5s all;
-}
-
-.decimoOctava{
-    background-image: url("multimedia/imagenes/garrixsheeran.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 60%;
-    z-index: 28;
-
-    transition: 0.5s all;
-}
-
-.decimoNovena{
-    background-image: url("multimedia/imagenes/spinnin.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 63%;
-    z-index: 29;
-
-    transition: 0.5s all;
-}
-
-.vigesima{
-    background-image: url("multimedia/imagenes/stmpdstudio.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 66%;
-    z-index: 30;
-
-    transition: 0.5s all;
-}
-
-#quinto{
-    position: absolute;
-    top: 69.2%;
-    z-index: -100;
-}
-
-.quintoTitulo{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 70%;
-    z-index: 80;
-    height: 8vh;
-}
-
-.vigesimoPrimera{
-    background-image: url("multimedia/imagenes/garrixtiesto.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 71%;
-    z-index: 31;
-
-    transition: 0.5s all;
-}
-
-.vigesimoSegunda{
-    background-image: url("multimedia/imagenes/garrixdualipa.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 74%;
-    z-index: 32;
-
-    transition: 0.5s all;
-}
-
-.vigesimoTercera{
-    background-image: url("multimedia/imagenes/garrixguetta.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 77%;
-    z-index: 33;
-
-    transition: 0.5s all;
-}
-
-.vigesimoCuarta{
-    background-image: url("multimedia/imagenes/garrixtmlwinter.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 80%;
-    z-index: 34;
-
-    transition: 0.5s all;
-}
-
-.vigesimoQuinta{
-    background-image: url("multimedia/imagenes/garrixdjmag.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 83%;
-    z-index: 35;
-
-    transition: 0.5s all;
-}
-
-#sexto{
-    position: absolute;
-    top: 86.2%;
-    z-index: -100;
-}
-
-.sextoTitulo{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 87%;
-    z-index: 80;
-    height: 8vh;
-}
-
-.vigesimoSexta{
-    background-image: url("multimedia/imagenes/sentioalbum.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 88%;
-    z-index: 36;
-
-    transition: 0.5s all;
-}
-
-.vigesimoSeptima{
-    background-image: url("multimedia/imagenes/sentioalbum2.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    justify-content: right;
-
-    position: absolute;
-    top: 91%;
-    z-index: 37;
-
-    transition: 0.5s all;
-}   
-
-.vigesimoOctava{
-    background-image: url("multimedia/imagenes/garrixcentral.png");
-    background-position: center;
-    background-size: 48vw;
-    background-repeat: no-repeat;
-    aspect-ratio: 16/9;
-
-    position: absolute;
-    top: 94%;
-    z-index: 28;
-
-    transition: 0.5s all;
-}
-
-.primeraFila:hover, 
-.terceraFila:hover, 
-.quintaFila:hover,
-.septimaFila:hover,
-.novenaFila:hover,
-.unDecima:hover,
-.decimoTercera:hover,
-.decimoQuinta:hover,
-.decimoSeptima:hover,
-.decimoNovena:hover,
-.vigesimoPrimera:hover,
-.vigesimoTercera:hover,
-.vigesimoQuinta:hover,
-.vigesimoSeptima:hover{
-    background-position: left;
-    background-size: 42vw;
-    z-index: 100;
-}
-
-.segundaFila:hover, 
-.cuartaFila:hover,
-.sextaFila:hover,
-.octavaFila:hover,
-.decimaFila:hover,
-.duoDecima:hover,
-.decimoCuarta:hover,
-.decimoSexta:hover,
-.decimoOctava:hover,
-.vigesima:hover,
-.vigesimoSegunda:hover,
-.vigesimoCuarta:hover,
-.vigesimoSexta:hover,
-.vigesimoOctava:hover{
-    background-position: right;
-    background-size: 42vw;
-    z-index: 100;
-}
-
-.containerFila:hover .parrafos{
-    display: block;
-    animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-.primeraFila:hover .parrafos{
-    animation: none;
-}
-
-.containerFila .imagen {
-    width: 50%;
-    display: none;
-}
-
-.containerFila .parrafos {
-    width: 45%;
-    display: none;
-    transition: 0.5s all;
-}
-
-.primeraFila .parrafos{
-    display: block;
-}
-
-.containerFila .parrafos p {
+.trayectoria .izq p{
     color: rgb(157, 157, 157);
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
     filter: drop-shadow(1px 1px 15px black);
     transition: 0.5s all;
+    text-align: end;
 }
 
-.pnombre {
-    padding: 0 0 2% 0;
+.trayectoria .der p{
+    color: rgb(157, 157, 157);
+    font-size: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    filter: drop-shadow(1px 1px 15px black);
+    transition: 0.5s all;
+    text-align: start;
 }
 
-.der {
-    text-align: right;
+.trayectoria .izq p em, .trayectoria .der p em{
+    color: white;
+    font-style: normal;
+    font-weight: 600;
 }
 
-.containerFila img:hover {
-    transform: scale(1.02);
-}
-
-.containerFila > .pnombre .nombre{
+.trayectoria .row .tituloTrayectoria p{
     filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
     font-size: 40px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: white;
     font-style: normal;
     font-weight: 600;
+    margin:0;
+    text-align: center;
 }
 
-.containerFila .parrafos .pnombre .nombre {
-    color: white;
-    font-weight: bold;
-    font-size: 32px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+.trayectoria .row p .emNombre{
     filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
+    font-size: 2rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
 }
 
-.parrafos em{
-    font-style: normal;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
+@media only screen and (max-width: 1200px){
+    
+    
+    .trayectoria .row p{
+        text-align: justify;
+    }
+
+    .trayectoria .intro p{
+        text-align: center;
+    }
+    
+    .vertNav{
+        display:none;
+    }
+
+}
+
+.intro{
+    height: 70vh;
+    margin-bottom: 10vh;
 }
 
 
