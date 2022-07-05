@@ -233,12 +233,18 @@ hr {
 }
 
 
-
 /* TRAYECTORIA */
 
 .trayectoria .row img{
     aspect-ratio: 16/9;
     width: 100%;
+
+    transition: 0.5s all;
+}
+
+.trayectoria .row img:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(1px 1px 5px white);
 }
 
 .trayectoria .izq p{
@@ -287,29 +293,22 @@ hr {
     font-weight: 600;
 }
 
-@media only screen and (max-width: 1200px){
-    
-    
+@media only screen and (max-width: 1200px){   
     .trayectoria .row p{
         text-align: justify;
     }
-
     .trayectoria .intro p{
         text-align: center;
     }
-    
     .vertNav{
         display:none;
     }
-
 }
 
 .intro{
     height: 70vh;
     margin-bottom: 10vh;
 }
-
-
 
 
 /* ---------------- SECTION DISCOGRAFIA ---------------- */
