@@ -1,0 +1,913 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------  NAVBAR BLACK ------------------------------ */
+.navbar .container-fluid {
+  padding: 0 8%;
+}
+.navbar .container-fluid .navbar-brand {
+  transition: 0.5s all;
+}
+.navbar .container-fluid .navbar-brand:hover {
+  filter: drop-shadow(1px 1px 10px white);
+}
+.navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+  filter: invert(100);
+}
+.navbar .container-fluid #navbarNav ul .nav-item {
+  padding-left: 10px;
+}
+.navbar .container-fluid #navbarNav ul .nav-item .nav-link {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.5s all;
+  text-transform: uppercase;
+  color: white;
+}
+.navbar .container-fluid #navbarNav ul .nav-item .nav-link:hover {
+  color: hsl(261deg, 74%, 38%);
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 992px) {
+  .navbar .container-fluid #navbarNav ul .nav-item {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar .container-fluid #navbarNav {
+    padding-top: 10px;
+  }
+}
+
+/* ------------------------------ NAVBAR LIGHT ------------------------------ */
+.bg-light .container-fluid .navbar-brand:hover {
+  filter: drop-shadow(1px 1px 10px black);
+}
+.bg-light .container-fluid .navbar-toggler {
+  filter: invert(0);
+}
+.bg-light .container-fluid #navbarNav ul .nav-item .nav-link {
+  color: black;
+}
+.bg-light .container-fluid #navbarNav ul .nav-item .nav-link:hover {
+  color: hsl(261deg, 74%, 38%);
+  transform: scale(1.1);
+}
+.bg-light .container-fluid #navbarNav ul .nav-item .active {
+  filter: drop-shadow(1px 1px 10px hsl(261deg, 74%, 38%));
+  color: hsl(261deg, 74%, 38%);
+}
+
+/* ------------------------------ HOME ------------------------------ */
+.gradient-home {
+  animation: color-change-4x 10s linear infinite alternate both;
+  height: auto;
+  width: auto;
+}
+.gradient-home .home {
+  background-image: url("../../multimedia/imagenes/garrixbg.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: opacity(95%);
+  height: 100vh;
+}
+.gradient-home .home .titulo {
+  color: white;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 800;
+  font-size: 4rem;
+  animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  transition: 0.5s all;
+}
+.gradient-home .home .titulo:hover {
+  animation: text-pop-up-top 0.5s ease-in-out both;
+}
+
+/* ------------------------------ TRAYECTORIA ------------------------------ */
+.trayectoria .der p em, .trayectoria .izq p em {
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.trayectoria {
+  background-image: url("../../multimedia/imagenes/fondolargo2.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5% 8%;
+}
+.trayectoria .vertNav {
+  /* VERTICAL NAV */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 100px;
+  height: 80vh;
+  width: 15%;
+  z-index: 200;
+}
+.trayectoria .vertNav .circulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+  transition: 0.5s all;
+}
+.trayectoria .vertNav .circulos img {
+  height: 15px;
+  width: 20px;
+  filter: invert(100%) opacity(50%);
+  padding-left: 5px;
+  transition: 0.5s all;
+}
+.trayectoria .vertNav .verticalNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.trayectoria .vertNav .verticalNav li {
+  padding-left: 10px;
+  transition: 0.5s all;
+}
+.trayectoria .vertNav .verticalNav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  transition: 0.5s all;
+  scroll-behavior: smooth;
+}
+.trayectoria .vertNav .verticalNav li a:hover {
+  filter: drop-shadow(1px 1px 10px white);
+}
+.trayectoria .vertNav .verticalNav li:hover {
+  transform: scale(1.05) translateX(10px);
+}
+.trayectoria .vertNav:hover .verticalNav {
+  display: flex;
+  animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.trayectoria .vertNav:hover .circulos {
+  height: 60%;
+}
+.trayectoria .vertNav:hover .circulos img {
+  filter: invert(100%) opacity(100%);
+  height: 22px;
+  width: 27px;
+}
+.trayectoria .intro {
+  height: 70vh;
+  margin-bottom: 10vh;
+}
+.trayectoria .row img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  transition: 0.5s all;
+}
+.trayectoria .row img:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0px 0px 10px white);
+}
+.trayectoria .row .tituloTrayectoria p {
+  font-size: 40px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  transition: 0.5s all;
+}
+.trayectoria .row .tituloTrayectoria p:hover {
+  filter: drop-shadow(0px 0px 15px white);
+}
+.trayectoria .row p .emNombre {
+  font-size: 2rem;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+}
+.trayectoria .izq p {
+  color: rgb(157, 157, 157);
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  transition: 0.5s all;
+  text-align: end;
+}
+.trayectoria .der p {
+  color: rgb(157, 157, 157);
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  transition: 0.5s all;
+  text-align: start;
+}
+@media only screen and (max-width: 1200px) {
+  .trayectoria .row p {
+    text-align: justify;
+  }
+  .trayectoria .intro p {
+    text-align: center;
+  }
+  .vertNav {
+    display: none;
+  }
+}
+/* ------------------------------ DISCOGRAFIA ------------------------------ */
+.discografia {
+  background-image: url("../../multimedia/imagenes/fondobn2.png");
+  background-size: cover;
+  background-position: center;
+  padding: 5% 8%;
+}
+
+.discografia h2 {
+  color: white;
+  font-size: 3rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
+}
+
+.discografia h2:hover {
+  filter: drop-shadow(0px 0px 40px white);
+}
+
+.discografia iframe {
+  height: 400px;
+  width: 100%;
+  margin: 20px 25px 60px 0;
+  box-shadow: 1px 1px 15px black;
+  border-radius: 5%;
+  transition: 0.5s all;
+}
+
+.discografia iframe:hover {
+  transform: scale(1.02);
+}
+
+/* ------------------------------ GALERIA ------------------------------ */
+.galeria {
+  background-image: url("../../multimedia/imagenes/fondobn2.png");
+  background-size: cover;
+  background-position: center;
+  padding: 5% 8%;
+}
+
+.galeria p {
+  margin-bottom: 0;
+}
+
+.filtros {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 2%;
+  filter: drop-shadow(1px 1px 15px black);
+}
+
+.minmax {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 50px 50px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .minmax {
+    margin: 10px 20px 10px 0;
+  }
+}
+.img > img {
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.categoria .nombrecat {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nombrecat p {
+  padding-left: 10px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  filter: drop-shadow(1px 1px 15px black);
+}
+
+.categoria ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0 30px 50px;
+  height: 130px;
+  list-style: none;
+}
+
+.categoria ul .k14 {
+  border-left: hsl(261deg, 74%, 38%) 3px solid;
+  color: hsl(261deg, 74%, 38%);
+  font-weight: 800;
+}
+
+.categoria ul li {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+  padding: 0 0 0 10px;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
+}
+
+.filtros img {
+  height: 24px;
+  width: 24px;
+  filter: invert(100%);
+  transition: 0.5s all;
+}
+
+.visualizacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(1px 1px 15px black);
+}
+
+.galeria .visualizacion img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+  cursor: pointer;
+  aspect-ratio: 16/10;
+  transition: 0.5s all;
+}
+
+.galeria .visualizacion img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px white);
+}
+
+.visualizacion p {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
+  padding-bottom: 20px;
+}
+
+.paginado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 5%;
+  margin-top: 50px;
+  filter: drop-shadow(0px 0px 20px black);
+}
+
+.galeria .visualizacion .paginado img {
+  height: 20px;
+  width: 20px;
+  filter: invert(100%);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.paginado a {
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  padding-bottom: 10px;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.paginado .n1 {
+  border-bottom: hsl(261deg, 74%, 38%) 3px solid;
+  color: hsl(261deg, 74%, 38%);
+  font-weight: 800;
+}
+
+.img img:hover, .categoria img:hover, .paginado img:hover {
+  filter: drop-shadow(1px 1px 15px white);
+  transform: scale(1.1);
+  filter: invert(100%);
+}
+
+.categoria ul li:hover, .paginado a:hover {
+  color: hsl(261deg, 74%, 38%);
+  transform: scale(1.1);
+}
+
+/* ------------------------------ TIENDA ------------------------------ */
+.tienda {
+  background-image: url("../../multimedia/imagenes/fondobn2.png");
+  background-size: cover;
+  background-position: center;
+  padding: 5% 8%;
+}
+
+.tienda p {
+  margin-bottom: 0;
+}
+
+.tiendaVisualizacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+  filter: drop-shadow(1px 1px 15px black);
+}
+
+@media only screen and (max-width: 576px) {
+  .tienda .tiendaVisualizacion {
+    padding: 0;
+  }
+  .tienda .tiendaVisualizacion .row {
+    padding: 30px 0;
+  }
+}
+.tiendaCabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+  width: 100%;
+}
+
+.tiendaCabecera > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
+}
+
+.tiendaCabecera p em {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tiendaCabecera img {
+  width: 45px;
+  filter: invert(100%);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.tienda .tiendaVisualizacion .ropa img {
+  width: 130px;
+  aspect-ratio: 4/6;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.tienda .tiendaVisualizacion h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+  filter: drop-shadow(1px 1px 15px black);
+}
+
+.tienda .tiendaVisualizacion h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+  filter: drop-shadow(1px 1px 15px black);
+}
+
+.tienda .tiendaVisualizacion .add img {
+  width: 35px;
+  filter: drop-shadow(1px 1px 15px white) invert(100%);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.tienda .tiendaVisualizacion .paginado img {
+  height: 20px;
+  width: 20px;
+  filter: invert(100%);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.tiendaCabecera img:hover {
+  transform: scale(1.2);
+}
+
+.add img:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+.ropa:hover img {
+  filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.5));
+}
+
+.ropa img:hover {
+  transform: scale(1.1);
+}
+
+/* ------------------------------ CONTACTO ------------------------------ */
+.contacto {
+  background-image: url("../../multimedia/imagenes/fondobn2.png");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 8%;
+}
+
+.contacto h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
+}
+
+.mapa {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.mapa iframe {
+  border: none;
+  border-radius: 3px;
+  opacity: 85%;
+  transition: 0.5s all;
+  height: 100%;
+  width: 100%;
+}
+
+.mapa iframe:hover {
+  transform: scale(1.01);
+  filter: drop-shadow(0px 0px 5px rgb(201, 201, 201));
+}
+
+.contacto label {
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.contacto input {
+  border-radius: 3px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  border: none;
+  color: white;
+  background-color: rgba(60, 60, 60, 0.5);
+  box-shadow: 1px 1px 15px black;
+  transition: 0.5s all;
+}
+
+.contacto input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contacto select {
+  border-radius: 3px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  appearance: none;
+  box-shadow: 1px 1px 15px black;
+  transition: 0.5s all;
+  background: rgba(60, 60, 60, 0.5);
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.contacto textarea {
+  border-radius: 3px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  border: none;
+  color: white;
+  background-color: rgba(60, 60, 60, 0.5);
+  box-shadow: 1px 1px 15px black;
+  transition: 0.5s all;
+}
+
+.contacto textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contacto input:focus {
+  background-color: rgba(60, 60, 60, 0.5);
+  color: white;
+}
+
+.contacto textarea:focus {
+  background-color: rgba(60, 60, 60, 0.5);
+  color: white;
+}
+
+.contacto button {
+  border-radius: 3px;
+  height: 30px;
+  width: 100px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  border: none;
+  color: white;
+  background-color: hsla(242deg, 90%, 27%, 0.3);
+  box-shadow: 1px 1px 15px black;
+  transition: 0.5s all;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.contacto button:hover {
+  background-color: hsla(250deg, 85%, 45%, 0.2);
+  transform: scale(1.1);
+}
+
+.contacto input:hover, .contacto select:hover, .contacto textarea:hover {
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.3));
+}
+
+/* ------------------------------ FOOTER ------------------------------ */
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+footer .socialfooter {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+footer .socialfooter .social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .socialfooter .social .grx {
+  display: block;
+  width: 150px;
+  height: 150px;
+  transition: 0.5s all;
+}
+footer .socialfooter .social .grx:hover {
+  transform: scale(1.2);
+}
+footer .socialfooter .social .stmpd {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: 0.5s all;
+}
+footer .socialfooter .social .stmpd:hover {
+  transform: scale(1.2);
+}
+footer .socialfooter .social ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+footer .socialfooter .social ul li {
+  display: inline-block;
+}
+footer .socialfooter .social ul li a {
+  display: block;
+  padding: 5px 30px 5px 30px;
+  margin: 2px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s all;
+}
+footer .socialfooter .social ul li a img {
+  height: 45px;
+  width: 45px;
+  padding: 1px;
+}
+footer .socialfooter .social ul li a:hover {
+  filter: drop-shadow(0 0 15px hsla(0deg, 0%, 0%, 0.8));
+  transform: scale(1.1);
+}
+footer hr {
+  background-color: black;
+  height: 2px;
+  border: none;
+  margin: 0;
+}
+footer .footernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8%;
+}
+footer .footernav .copy {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+footer .footernav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  list-style: none;
+  margin: 0;
+}
+footer .footernav ul li {
+  display: inline-block;
+  padding-left: 10px;
+}
+footer .footernav ul li .politicas {
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  transition: 0.5s all;
+  font-weight: 500;
+}
+footer .footernav ul li .politicas:hover {
+  transform: scale(1.1);
+}
+
+/* ------------------------------ POLITICAS ------------------------------ */
+.politica {
+  background-image: url("../../multimedia/imagenes/fondo4.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2% 10%;
+  height: auto;
+}
+
+.politica h1 {
+  color: white;
+  font-size: 60px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  margin: 20px 0;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
+}
+
+.politica h2 {
+  color: white;
+  font-size: 40px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  margin: 20px 0;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
+  margin-top: 70px;
+}
+
+.politica h3 {
+  color: white;
+  font-size: 25px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  margin: 20px 0;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
+}
+
+.politica p {
+  color: rgb(210, 210, 210);
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  margin: 15px 0;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
+  width: 60%;
+}
+
+/* ------------------------------ ANIMACIONES ------------------------------ */
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes color-change-4x {
+  0% {
+    background: #19dcea;
+  }
+  33.3333% {
+    background: #b22cff;
+  }
+  66.666% {
+    background: #ea2222;
+  }
+  100% {
+    background: #f5be10;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-out-fwd {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+}
+@keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #303030, 0 2px 0 #ad1cb7, 0 3px 0 #303030, 0 4px 0 #ad1cb7, 0 5px 0 #303030, 0 6px 0 #ad1cb7, 0 7px 0 #303030, 0 8px 0 #ad1cb7, 0 9px 0 #303030, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

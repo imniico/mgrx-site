@@ -1,0 +1,167 @@
+/* ------------------------------ TRAYECTORIA ------------------------------ */
+
+@import '../base/mixins';
+@import '../base/extends';
+
+.trayectoria {
+    background-image: url("../../multimedia/imagenes/fondolargo2.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $pad-web;
+
+    .vertNav {
+        /* VERTICAL NAV */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 100px;
+        height: 80vh;
+        width: 15%;
+        z-index: 200;
+
+        .circulos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 30%;
+            transition: $transit-global;
+
+            img {
+                height: 15px;
+                width: 20px;
+                filter: invert(100%) opacity(50%);
+                padding-left: 5px;
+                transition: $transit-global;
+            }
+        }
+
+        .verticalNav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 60%;
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding-left: 10px;
+                transition: $transit-global;
+
+                a {
+                    text-decoration: none;
+                    color: nth($colores, 2);
+                    font-size: 14px;
+                    font-family: nth($fuentes, 1);
+                    font-weight: 500;
+                    transition: $transit-global;
+                    scroll-behavior: smooth;
+
+                    &:hover {
+                        filter: drop-shadow(1px 1px 10px nth($colores,2));
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.05) translateX(10px);
+                }
+            }
+        }
+
+        &:hover .verticalNav {
+            display: flex;
+            animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+
+        &:hover .circulos {
+            height: 60%;
+        }
+
+        &:hover .circulos img {
+            filter: invert(100%) opacity(100%);
+            height: 22px;
+            width: 27px;
+        }        
+    }
+
+    .intro{
+        height: 70vh;
+        margin-bottom: 10vh;
+    }
+
+    .row {
+        img {
+            aspect-ratio: 16/9;
+            width: 100%;
+            transition: $transit-global;
+
+            &:hover {
+                transform: scale(1.02);
+                filter: drop-shadow(0px 0px 10px nth($colores,2));
+            }
+        }
+
+        .tituloTrayectoria {
+            p {
+                font-size: 40px;
+                font-family: nth($fuentes, 1);
+                color: nth($colores, 2);
+                font-style: normal;
+                font-weight: 600;
+                margin: 0;
+                text-align: center;
+                transition: $transit-global;
+
+                &:hover {
+                    filter: drop-shadow(0px 0px 15px nth($colores,2));
+                }
+            }
+        }
+
+        p{
+            .emNombre {
+                font-size: 2rem;
+                font-family: nth($fuentes,1);
+                color: nth($colores,2);
+                font-style: normal;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .izq p {
+        @include linea-trayectoria(end);
+        em {
+            @extend %em-trayectoria;
+        }
+    }
+
+    .der p {
+        @include linea-trayectoria(start);
+        em {
+            @extend %em-trayectoria;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){   
+    .trayectoria .row p{
+        text-align: justify;
+    }
+    .trayectoria .intro p{
+        text-align: center;
+    }
+    .vertNav{
+        display:none;
+    }
+}
+
+
+
+

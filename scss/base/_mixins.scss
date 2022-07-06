@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'listas';
+
+@mixin linea-trayectoria($alineacion){
+    color: rgb(157, 157, 157);
+    font-size: 20px;
+    font-family: nth($fuentes, 1);
+    font-weight: 500;
+    transition: $transit-global;
+    text-align: $alineacion;
+}

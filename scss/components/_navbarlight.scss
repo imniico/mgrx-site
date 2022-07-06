@@ -1,0 +1,35 @@
+
+/* ------------------------------ NAVBAR LIGHT ------------------------------ */
+
+.bg-light{
+    .container-fluid{
+        .navbar-brand{
+            &:hover{
+                filter: drop-shadow(1px 1px 10px nth($colores,1));
+            }
+        }
+        
+        .navbar-toggler{
+            filter: invert(0);
+        }
+
+        #navbarNav{
+            ul{
+                .nav-item{
+                    .nav-link{
+                        color: nth($colores,1);
+                        &:hover{
+                            color: nth($colores, 3);
+                            transform: scale(1.1);
+                        }                        
+                    }
+                    .active{
+                        filter: drop-shadow(1px 1px 10px nth($colores,3));
+                        color: nth($colores,3);
+                    }
+                }
+            }
+            }
+        }
+    }
+

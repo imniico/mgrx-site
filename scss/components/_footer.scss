@@ -1,0 +1,134 @@
+/* ------------------------------ FOOTER ------------------------------ */
+
+footer {
+    background-color: nth($colores, 2);
+    display: flex;
+    flex-direction: column;
+
+    .socialfooter {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 40px;
+        padding-top: 20px;
+
+        .social {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .grx {
+                display: block;
+                width: 150px;
+                height: 150px;
+                transition: $transit-global;
+
+                &:hover {
+                    transform: scale(1.2)
+                }
+            }
+
+            .stmpd {
+                display: block;
+                height: 100px;
+                width: 100px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                transition: $transit-global;
+
+                &:hover {
+                    transform: scale(1.2)
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                margin-top: 10px;
+                padding: 0;
+                list-style: none;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        display: block;
+                        padding: 5px 30px 5px 30px;
+                        margin: 2px;
+                        text-decoration: none;
+                        text-align: center;
+                        transition: $transit-global;
+
+                        img {
+                            height: 45px;
+                            width: 45px;
+                            padding: 1px;
+                        }
+
+                        &:hover {
+                            filter: drop-shadow(0 0 15px hsla(0, 0%, 0%, 0.8));
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    hr{
+        background-color: nth($colores, 1);
+        height: 2px;
+        border: none;
+        margin: 0;
+    }
+
+    .footernav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 8%;
+
+        .copy {
+            font-family: nth($fuentes, 2);
+            font-size: 16px;
+            font-weight: 500;
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 50%;
+            list-style: none;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                padding-left: 10px;
+
+                .politicas {
+                    text-decoration: none;
+                    color: nth($colores,1);
+                    display: block;
+                    text-align: center;
+                    font-family: nth($fuentes, 2);
+                    font-size: 16px;
+                    transition: $transit-global;
+                    font-weight: 500;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+}
+

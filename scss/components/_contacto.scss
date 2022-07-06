@@ -1,0 +1,122 @@
+
+/* ------------------------------ CONTACTO ------------------------------ */
+
+.contacto{
+    background-image: url("../../multimedia/imagenes/fondobn2.png");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 8%;
+}
+
+.contacto h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    filter: drop-shadow(1px 1px 15px black);
+    transition: 0.5s all;
+}
+
+.mapa{
+    height: 100%;
+    border-radius: 3px;
+
+}
+.mapa iframe {
+    border: none;
+    border-radius: 3px;
+    opacity: 85%;
+    transition: 0.5s all;
+    height: 100%;
+    width: 100%;
+}
+
+.mapa iframe:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(0px 0px 5px rgb(201, 201, 201));
+}
+
+.contacto label{
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.contacto input{
+    border-radius: 3px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    border: none;
+    color: white;
+    background-color: rgba(60, 60, 60, 0.5);
+    box-shadow: 1px 1px 15px black;
+    transition: 0.5s all;
+}
+
+.contacto input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contacto select{
+    border-radius: 3px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    appearance: none;
+    box-shadow: 1px 1px 15px black;
+    transition: 0.5s all;
+    background: rgba(60, 60, 60, 0.5);
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.contacto textarea{
+    border-radius: 3px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    border: none;
+    color: white;
+    background-color: rgba(60, 60, 60, 0.5);
+    box-shadow: 1px 1px 15px black;
+    transition: 0.5s all;
+}
+
+.contacto textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contacto input:focus{
+    background-color: rgba(60, 60, 60, 0.5);
+    color: white;
+}
+
+.contacto textarea:focus{
+    background-color: rgba(60, 60, 60, 0.5);
+    color: white;
+}
+
+.contacto button{
+    border-radius: 3px;
+    height: 30px;
+    width: 100px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    border: none;
+    color: white;
+    background-color: hsla(242, 90%, 27%, 0.3);
+    box-shadow: 1px 1px 15px black;
+    transition: 0.5s all;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.contacto button:hover{
+    background-color: hsla(250, 85%, 45%, 0.2);
+    transform: scale(1.1);
+}
+
+.contacto input:hover, .contacto select:hover, .contacto textarea:hover {
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.3));
+}

@@ -1,0 +1,30 @@
+/* ------------------------------ HOME ------------------------------ */
+
+.gradient-home {
+    animation: nth($animaciones-home,1);
+    height: auto;
+    width: auto;
+
+    .home {
+        background-image: url("../../multimedia/imagenes/garrixbg.jpg");
+        background-position: center;
+        background-size: cover;
+        filter: opacity(95%);
+        height: 100vh;
+
+        .titulo {
+            color: nth($colores,2);
+            font-family: nth($fuentes,1);
+            font-weight: 800;
+            font-size: 4rem;
+
+            animation: nth($animaciones-home,2);
+            transition: $transit-global;
+
+            &:hover {
+                animation: nth($animaciones-home,3);
+            }
+        }
+    }
+}
+

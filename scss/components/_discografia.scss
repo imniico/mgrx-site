@@ -1,0 +1,36 @@
+
+/* ------------------------------ DISCOGRAFIA ------------------------------ */
+
+.discografia {
+    background-image: url("../../multimedia/imagenes/fondobn2.png");
+    background-size: cover;
+    background-position: center;
+
+    padding: 5% 8%;
+}
+
+.discografia h2{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    filter: drop-shadow(1px 1px 15px black);
+    transition: 0.5s all;
+}
+
+.discografia h2:hover{
+    filter: drop-shadow(0px 0px 40px white);
+}
+
+.discografia iframe{
+    height: 400px;
+    width: 100%;
+    margin: 20px 25px 60px 0;
+    box-shadow: 1px 1px 15px black;
+    border-radius: 5%;
+    transition: 0.5s all;
+}
+
+.discografia iframe:hover {
+    transform: scale(1.02);
+}

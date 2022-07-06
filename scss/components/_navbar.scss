@@ -1,0 +1,53 @@
+
+/* ------------------------------  NAVBAR BLACK ------------------------------ */
+
+.navbar {
+    .container-fluid {
+
+        padding: 0 8%;
+
+        .navbar-brand {
+            transition: $transit-global;
+
+            &:hover {
+                filter: drop-shadow(1px 1px 10px nth($colores, 2));
+            }
+        }
+
+        .navbar-toggler {
+            .navbar-toggler-icon {
+                filter: invert(100);
+            }
+        }
+
+        #navbarNav {
+            ul {
+                .nav-item {
+                    padding-left: 10px;
+
+                    .nav-link {
+                        font-family: nth($fuentes, 2);
+                        font-weight: 600;
+                        font-size: 16px;
+                        transition: $transit-global;
+                        text-transform: uppercase;
+                        color: nth($colores, 2);
+
+                        &:hover {
+                            color: nth($colores, 3);
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    @media only screen and (max-width: 992px) {
+                        padding: 0;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 992px) {
+                padding-top: 10px;
+            }
+        }
+    }
+}

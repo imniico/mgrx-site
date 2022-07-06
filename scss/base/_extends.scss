@@ -1,0 +1,9 @@
+@import 'variables';
+@import 'listas';
+
+
+%em-trayectoria {
+    color: nth($colores,2);
+    font-style: normal;
+    font-weight: 600;
+}
