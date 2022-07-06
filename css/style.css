@@ -69,7 +69,7 @@
   width: auto;
 }
 .gradient-home .home {
-  background-image: url("../../multimedia/imagenes/garrixbg.jpg");
+  background-image: url("../multimedia/imagenes/garrixbg.jpg");
   background-position: center;
   background-size: cover;
   filter: opacity(95%);
@@ -95,7 +95,7 @@
 }
 
 .trayectoria {
-  background-image: url("../../multimedia/imagenes/fondolargo2.png");
+  background-image: url("../multimedia/imagenes/fondolargo2.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -232,7 +232,7 @@
 }
 /* ------------------------------ DISCOGRAFIA ------------------------------ */
 .discografia {
-  background-image: url("../../multimedia/imagenes/fondobn2.png");
+  background-image: url("../multimedia/imagenes/fondobn2.png");
   background-size: cover;
   background-position: center;
   padding: 5% 8%;
@@ -266,7 +266,7 @@
 
 /* ------------------------------ GALERIA ------------------------------ */
 .galeria {
-  background-image: url("../../multimedia/imagenes/fondobn2.png");
+  background-image: url("../multimedia/imagenes/fondobn2.png");
   background-size: cover;
   background-position: center;
   padding: 5% 8%;
@@ -438,7 +438,7 @@
 
 /* ------------------------------ TIENDA ------------------------------ */
 .tienda {
-  background-image: url("../../multimedia/imagenes/fondobn2.png");
+  background-image: url("../multimedia/imagenes/fondobn2.png");
   background-size: cover;
   background-position: center;
   padding: 5% 8%;
@@ -550,7 +550,7 @@
 
 /* ------------------------------ CONTACTO ------------------------------ */
 .contacto {
-  background-image: url("../../multimedia/imagenes/fondobn2.png");
+  background-image: url("../multimedia/imagenes/fondobn2.png");
   background-size: cover;
   background-position: center;
   padding: 50px 8%;
@@ -785,7 +785,7 @@ footer .footernav ul li .politicas:hover {
 
 /* ------------------------------ POLITICAS ------------------------------ */
 .politica {
-  background-image: url("../../multimedia/imagenes/fondo4.png");
+  background-image: url("../multimedia/imagenes/fondo4.png");
   background-size: cover;
   background-position: center;
   display: flex;
