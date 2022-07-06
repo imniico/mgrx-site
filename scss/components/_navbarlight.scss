@@ -10,7 +10,9 @@
         }
         
         .navbar-toggler{
-            filter: invert(0);
+            .navbar-toggler-icon {
+                filter: invert(0);
+            }
         }
 
         #navbarNav{
