@@ -64,27 +64,67 @@
 
 /* ------------------------------ HOME ------------------------------ */
 .gradient-home {
-  animation: color-change-4x 10s linear infinite alternate both;
   height: auto;
   width: auto;
 }
 .gradient-home .home {
-  background-image: url("../multimedia/imagenes/garrixbg.jpg");
   background-position: center;
   background-size: cover;
+  background-color: black;
   filter: opacity(95%);
-  height: 100vh;
+  height: 95vh;
+  padding: 0;
 }
 .gradient-home .home .titulo {
   color: white;
   font-family: "Plus Jakarta Sans";
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 5rem;
   animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   transition: 0.5s all;
+  filter: drop-shadow(5px 5px 10px black);
 }
 .gradient-home .home .titulo:hover {
   animation: text-pop-up-top 0.5s ease-in-out both;
+}
+.gradient-home .home .titulo:hover + .titulo {
+  animation: text-pop-up-top 0.5s ease-in-out both;
+}
+@media screen and (max-width: 550px) {
+  .gradient-home .home .titulo {
+    font-size: 3rem;
+  }
+}
+
+#carouselExampleInterval {
+  height: 100%;
+  position: relative;
+  z-index: 50;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+.home .row {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+}
+
+.home .row div {
+  padding: 0;
 }
 
 /* ------------------------------ TRAYECTORIA ------------------------------ */
@@ -675,7 +715,7 @@
 
 /* ------------------------------ FOOTER ------------------------------ */
 footer {
-  background-color: white;
+  background-color: black;
   display: flex;
   flex-direction: column;
 }
@@ -695,6 +735,7 @@ footer .socialfooter .social .grx {
   width: 150px;
   height: 150px;
   transition: 0.5s all;
+  filter: invert(1);
 }
 footer .socialfooter .social .grx:hover {
   transform: scale(1.2);
@@ -706,6 +747,7 @@ footer .socialfooter .social .stmpd {
   margin-top: 25px;
   margin-bottom: 25px;
   transition: 0.5s all;
+  filter: invert(1);
 }
 footer .socialfooter .social .stmpd:hover {
   transform: scale(1.2);
@@ -733,13 +775,14 @@ footer .socialfooter .social ul li a img {
   height: 45px;
   width: 45px;
   padding: 1px;
+  filter: invert(1) opacity(75%);
 }
 footer .socialfooter .social ul li a:hover {
-  filter: drop-shadow(0 0 15px hsla(0deg, 0%, 0%, 0.8));
+  filter: drop-shadow(0 0 15px hsla(0deg, 0%, 100%, 0.75));
   transform: scale(1.1);
 }
 footer hr {
-  background-color: black;
+  background-color: white;
   height: 2px;
   border: none;
   margin: 0;
@@ -751,6 +794,7 @@ footer .footernav {
   padding: 10px 8%;
 }
 footer .footernav .copy {
+  color: rgba(255, 255, 255, 0.75);
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 500;
@@ -775,7 +819,7 @@ footer .footernav ul li {
 }
 footer .footernav ul li .politicas {
   text-decoration: none;
-  color: black;
+  color: rgba(255, 255, 255, 0.75);
   display: block;
   text-align: center;
   font-family: "Poppins";

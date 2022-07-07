@@ -1,7 +1,7 @@
 /* ------------------------------ FOOTER ------------------------------ */
 
 footer {
-    background-color: nth($colores, 2);
+    background-color: nth($colores, 1);
     display: flex;
     flex-direction: column;
 
@@ -21,6 +21,7 @@ footer {
                 width: 150px;
                 height: 150px;
                 transition: $transit-global;
+                filter: invert(1);
 
                 &:hover {
                     transform: scale(1.2)
@@ -34,6 +35,7 @@ footer {
                 margin-top: 25px;
                 margin-bottom: 25px;
                 transition: $transit-global;
+                filter: invert(1);
 
                 &:hover {
                     transform: scale(1.2)
@@ -63,10 +65,11 @@ footer {
                             height: 45px;
                             width: 45px;
                             padding: 1px;
+                            filter: invert(1) opacity(75%);
                         }
 
                         &:hover {
-                            filter: drop-shadow(0 0 15px hsla(0, 0%, 0%, 0.8));
+                            filter: drop-shadow(0 0 15px hsla(0, 0%, 100%, 0.75));
                             transform: scale(1.1);
                         }
                     }
@@ -76,7 +79,7 @@ footer {
     }
 
     hr{
-        background-color: nth($colores, 1);
+        background-color: nth($colores, 2);
         height: 2px;
         border: none;
         margin: 0;
@@ -89,6 +92,7 @@ footer {
         padding: 10px 8%;
 
         .copy {
+            color: rgba(255, 255, 255, 0.75);
             font-family: nth($fuentes, 2);
             font-size: 16px;
             font-weight: 500;
@@ -113,8 +117,9 @@ footer {
                 padding-left: 10px;
 
                 .politicas {
+                    
                     text-decoration: none;
-                    color: nth($colores,1);
+                    color: rgba(255, 255, 255, 0.75);
                     display: block;
                     text-align: center;
                     font-family: nth($fuentes, 2);
