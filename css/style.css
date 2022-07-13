@@ -158,14 +158,21 @@
   font-family: "Poppins";
   font-weight: 600;
   font-size: 16px;
-  transition: 0.5s all;
   text-transform: uppercase;
   color: white;
   filter: drop-shadow(0px 0px 10px black);
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: 0.5s all;
 }
 .navbar .container-fluid #navbarNav ul .nav-item .nav-link:hover {
-  color: hsl(261deg, 74%, 38%);
+  color: white;
   transform: scale(1.1);
+  filter: drop-shadow(0px 0px 20px white);
+  background-size: 100% 2px;
 }
 @media only screen and (max-width: 992px) {
   .navbar .container-fluid #navbarNav ul .nav-item {

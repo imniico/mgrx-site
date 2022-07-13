@@ -1,8 +1,7 @@
-
 /* ------------------------------  NAVBAR BLACK ------------------------------ */
 
 .navbar {
-    
+
     .container-fluid {
 
         padding: 0 8%;
@@ -30,14 +29,23 @@
                         font-family: nth($fuentes, 2);
                         font-weight: 600;
                         font-size: 16px;
-                        transition: $transit-global;
+                        // transition: $transit-global;
                         text-transform: uppercase;
                         color: nth($colores, 2);
                         filter: drop-shadow(0px 0px 10px black);
 
+                        text-decoration: none;
+                        background-image: linear-gradient(currentColor, currentColor);
+                        background-position: 0% 100%;
+                        background-repeat: no-repeat;
+                        background-size: 0% 2px;
+                        transition: $transit-global;
+
                         &:hover {
-                            color: nth($colores, 3);
+                            color: nth($colores, 2);
                             transform: scale(1.1);
+                            filter: drop-shadow(0px 0px 20px nth($colores, 2));
+                            background-size: 100% 2px;
                         }
                     }
 
