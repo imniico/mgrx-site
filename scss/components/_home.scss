@@ -25,14 +25,6 @@
 
             filter: drop-shadow(5px 5px 10px black);
 
-            &:hover {
-                animation: nth($animaciones-home,3);
-            }
-
-            &:hover + .titulo{
-                animation: nth($animaciones-home,3);
-            }
-
             @media screen and (max-width:550px){
                 font-size: 3rem;
             }

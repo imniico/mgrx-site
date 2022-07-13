@@ -218,12 +218,6 @@
   transition: 0.5s all;
   filter: drop-shadow(5px 5px 10px black);
 }
-.gradient-home .home .titulo:hover {
-  animation: text-pop-up-top 0.5s ease-in-out both;
-}
-.gradient-home .home .titulo:hover + .titulo {
-  animation: text-pop-up-top 0.5s ease-in-out both;
-}
 @media screen and (max-width: 550px) {
   .gradient-home .home .titulo {
     font-size: 3rem;
