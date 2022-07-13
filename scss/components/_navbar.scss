@@ -44,7 +44,6 @@
                         &:hover {
                             color: nth($colores, 2);
                             transform: scale(1.1);
-                            filter: drop-shadow(0px 0px 20px nth($colores, 2));
                             background-size: 100% 2px;
                         }
                     }
