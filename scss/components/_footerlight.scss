@@ -1,7 +1,5 @@
-/* ------------------------------ FOOTER ------------------------------ */
-
-.footer-black {
-    background-color: black;
+.footer-light {
+    background-color: nth($colores,2);
     display: flex;
     flex-direction: column;
 
@@ -21,7 +19,7 @@
                 width: 150px;
                 height: 150px;
                 transition: $transit-global;
-                filter: invert(1);
+
 
                 &:hover {
                     transform: scale(1.2)
@@ -35,7 +33,6 @@
                 margin-top: 25px;
                 margin-bottom: 25px;
                 transition: $transit-global;
-                filter: invert(1);
 
                 &:hover {
                     transform: scale(1.2)
@@ -65,11 +62,11 @@
                             height: 45px;
                             width: 45px;
                             padding: 1px;
-                            filter: invert(1) opacity(75%);
+    
                         }
 
                         &:hover {
-                            filter: drop-shadow(0 0 15px hsla(0, 0%, 100%, 0.75));
+                            filter: drop-shadow(0 0 15px hsla(0, 0%, 2%, 0.75));
                             transform: scale(1.1);
                         }
                     }
@@ -79,7 +76,7 @@
     }
 
     hr{
-        background-color: nth($colores, 2);
+        background-color: nth($colores, 1);
         height: 2px;
         border: none;
         margin: 0;
@@ -92,7 +89,7 @@
         padding: 10px 8%;
 
         .copy {
-            color: rgba(255, 255, 255, 0.75);
+            color: rgba(0, 0, 0, 0.75);
             font-family: nth($fuentes, 2);
             font-size: 16px;
             font-weight: 500;
@@ -119,7 +116,7 @@
                 .politicas {
                     
                     text-decoration: none;
-                    color: rgba(255, 255, 255, 0.75);
+                    color: rgba(0, 0, 0, 0.75);
                     display: block;
                     text-align: center;
                     font-family: nth($fuentes, 2);
@@ -136,4 +133,3 @@
     }
 
 }
-

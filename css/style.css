@@ -683,33 +683,33 @@
 }
 
 /* ------------------------------ FOOTER ------------------------------ */
-footer {
+.footer-black {
   background-color: black;
   display: flex;
   flex-direction: column;
 }
-footer .socialfooter {
+.footer-black .socialfooter {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 40px;
   padding-top: 20px;
 }
-footer .socialfooter .social {
+.footer-black .socialfooter .social {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-footer .socialfooter .social .grx {
+.footer-black .socialfooter .social .grx {
   display: block;
   width: 150px;
   height: 150px;
   transition: 0.5s all;
   filter: invert(1);
 }
-footer .socialfooter .social .grx:hover {
+.footer-black .socialfooter .social .grx:hover {
   transform: scale(1.2);
 }
-footer .socialfooter .social .stmpd {
+.footer-black .socialfooter .social .stmpd {
   display: block;
   height: 100px;
   width: 100px;
@@ -718,10 +718,10 @@ footer .socialfooter .social .stmpd {
   transition: 0.5s all;
   filter: invert(1);
 }
-footer .socialfooter .social .stmpd:hover {
+.footer-black .socialfooter .social .stmpd:hover {
   transform: scale(1.2);
 }
-footer .socialfooter .social ul {
+.footer-black .socialfooter .social ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -729,10 +729,10 @@ footer .socialfooter .social ul {
   padding: 0;
   list-style: none;
 }
-footer .socialfooter .social ul li {
+.footer-black .socialfooter .social ul li {
   display: inline-block;
 }
-footer .socialfooter .social ul li a {
+.footer-black .socialfooter .social ul li a {
   display: block;
   padding: 5px 30px 5px 30px;
   margin: 2px;
@@ -740,29 +740,29 @@ footer .socialfooter .social ul li a {
   text-align: center;
   transition: 0.5s all;
 }
-footer .socialfooter .social ul li a img {
+.footer-black .socialfooter .social ul li a img {
   height: 45px;
   width: 45px;
   padding: 1px;
   filter: invert(1) opacity(75%);
 }
-footer .socialfooter .social ul li a:hover {
+.footer-black .socialfooter .social ul li a:hover {
   filter: drop-shadow(0 0 15px hsla(0deg, 0%, 100%, 0.75));
   transform: scale(1.1);
 }
-footer hr {
+.footer-black hr {
   background-color: white;
   height: 2px;
   border: none;
   margin: 0;
 }
-footer .footernav {
+.footer-black .footernav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 8%;
 }
-footer .footernav .copy {
+.footer-black .footernav .copy {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Poppins";
   font-size: 16px;
@@ -773,7 +773,7 @@ footer .footernav .copy {
   align-items: center;
   margin: 0;
 }
-footer .footernav ul {
+.footer-black .footernav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -782,11 +782,11 @@ footer .footernav ul {
   list-style: none;
   margin: 0;
 }
-footer .footernav ul li {
+.footer-black .footernav ul li {
   display: inline-block;
   padding-left: 10px;
 }
-footer .footernav ul li .politicas {
+.footer-black .footernav ul li .politicas {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.75);
   display: block;
@@ -796,7 +796,121 @@ footer .footernav ul li .politicas {
   transition: 0.5s all;
   font-weight: 500;
 }
-footer .footernav ul li .politicas:hover {
+.footer-black .footernav ul li .politicas:hover {
+  transform: scale(1.1);
+}
+
+.footer-light {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.footer-light .socialfooter {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+.footer-light .socialfooter .social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-light .socialfooter .social .grx {
+  display: block;
+  width: 150px;
+  height: 150px;
+  transition: 0.5s all;
+}
+.footer-light .socialfooter .social .grx:hover {
+  transform: scale(1.2);
+}
+.footer-light .socialfooter .social .stmpd {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: 0.5s all;
+}
+.footer-light .socialfooter .social .stmpd:hover {
+  transform: scale(1.2);
+}
+.footer-light .socialfooter .social ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+.footer-light .socialfooter .social ul li {
+  display: inline-block;
+}
+.footer-light .socialfooter .social ul li a {
+  display: block;
+  padding: 5px 30px 5px 30px;
+  margin: 2px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s all;
+}
+.footer-light .socialfooter .social ul li a img {
+  height: 45px;
+  width: 45px;
+  padding: 1px;
+}
+.footer-light .socialfooter .social ul li a:hover {
+  filter: drop-shadow(0 0 15px hsla(0deg, 0%, 2%, 0.75));
+  transform: scale(1.1);
+}
+.footer-light hr {
+  background-color: black;
+  height: 2px;
+  border: none;
+  margin: 0;
+}
+.footer-light .footernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8%;
+}
+.footer-light .footernav .copy {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+.footer-light .footernav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  list-style: none;
+  margin: 0;
+}
+.footer-light .footernav ul li {
+  display: inline-block;
+  padding-left: 10px;
+}
+.footer-light .footernav ul li .politicas {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 16px;
+  transition: 0.5s all;
+  font-weight: 500;
+}
+.footer-light .footernav ul li .politicas:hover {
   transform: scale(1.1);
 }
 
