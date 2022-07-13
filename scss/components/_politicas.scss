@@ -1,5 +1,7 @@
 /* ------------------------------ POLITICAS ------------------------------ */
 
+@import '../base/maps';
+
 .politica {
     background-image: url("../multimedia/imagenes/fondo4.png");
     background-size: cover;
@@ -9,49 +11,43 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    
+
     padding: 2% 10%;
     height: auto;
-}
 
-.politica h1 {
-    color: white;
-    font-size: 60px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 800;
-    margin: 20px 0;
-    filter: drop-shadow(1px 1px 15px black);
-    transition: 0.5s all;
-}
+    h1 {
+        color: nth($colores, 2);
+        font-family: nth($fuentes, 1);
+        filter: drop-shadow(1px 1px 15px black);
+        transition: $transit-global;
+        font-weight: map-get($polit-titulo, ancho-fuente);
+        margin: map-get($polit-titulo, margen);
+    }
 
-.politica h2 {
-    color: white;
-    font-size: 40px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 700;
-    margin: 20px 0;
-    filter: drop-shadow(1px 1px 15px black);
-    transition: 0.5s all;
-    margin-top: 70px;
-}
+    h2 {
+        color: nth($colores, 2);
+        font-family: nth($fuentes, 1);
+        filter: drop-shadow(1px 1px 15px black);
+        transition: $transit-global;
+        font-weight: map-get($polit-subt1, ancho-fuente);
+        margin: map-get($polit-subt1, margen);
+    }
 
-.politica h3 {
-    color: white;
-    font-size: 25px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 700;
-    margin: 20px 0;
-    filter: drop-shadow(1px 1px 15px black);
-    transition: 0.5s all;
-}
+    h3 {
+        color: nth($colores, 2);
+        font-family: nth($fuentes, 1);
+        filter: drop-shadow(1px 1px 15px black);
+        transition: $transit-global;
+        font-weight: map-get($polit-subt2, ancho-fuente);
+        margin: map-get($polit-subt2, margen);
+    }
 
-.politica p {
-    color: rgb(210, 210, 210);
-    font-size: 20px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 500;
-    margin: 15px 0;
-    filter: drop-shadow(1px 1px 15px black);
-    transition: 0.5s all;
-    width: 60%;
+    p {
+        color: rgb(210, 210, 210);
+        font-family: nth($fuentes, 1);
+        filter: drop-shadow(1px 1px 15px black);
+        transition: $transit-global;
+        font-weight: map-get($polit-parrafo, ancho-fuente);
+        margin: map-get($polit-parrafo, margen);
+    }
 }

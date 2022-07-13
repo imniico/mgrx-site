@@ -1,122 +1,118 @@
-
 /* ------------------------------ TIENDA ------------------------------ */
 
-.tienda{
+.tienda {
     background-image: url("../multimedia/imagenes/fondobn2.png");
     background-size: cover;
     background-position: center;
-    padding: 5% 8%;
-}
+    padding: $pad-web;
 
-.tienda p{
-    margin-bottom: 0;
-}
-
-.tiendaVisualizacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 100%;
-    padding: 0 50px;
-
-    filter: drop-shadow(1px 1px 15px black);
-
-}
-
-@media only screen and (max-width:576px){
-    .tienda .tiendaVisualizacion{
-        padding: 0;
-    }
-    .tienda .tiendaVisualizacion .row{
-        padding: 30px 0;
+    p {
+        margin-bottom: 0;
     }
 
-}
+    .filtros {
+        @extend %filtros;
+    }
 
-.tiendaCabecera {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .tiendaVisualizacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 0 50px;
+        filter: drop-shadow(1px 1px 15px nth($colores, 1));
 
-    height: 5%;
-    width: 100%;
-}
+        @media only screen and (max-width:576px) {
+            padding: 0;
+        }
 
-.tiendaCabecera > p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    color: hsl(0, 0%, 100%);
-    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
-}
+        .tiendaCabecera {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 5%;
+            width: 100%;
 
-.tiendaCabecera p em{
-    font-weight: 500;
-    font-style: normal;
-}
+            p {
+                font-family: nth($fuentes, 2);
+                font-size: 40px;
+                font-weight: 700;
+                color: nth($colores, 2);
+                filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
 
-.tiendaCabecera img {
-    width: 45px;
-    filter: invert(100%);
-    transition: 0.5s all;
-    cursor: pointer;
-}
+                em {
+                    font-weight: 500;
+                    font-style: normal;
+                }
+            }
 
+            img {
+                width: 45px;
+                filter: invert(100%);
+                transition: $transit-global;
+                cursor: pointer;
 
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
 
-.tienda .tiendaVisualizacion .ropa img{
-    width: 130px;
-    aspect-ratio: 4/6;
-    transition: 0.5s all;
-    cursor: pointer;
-}
+        .row {
+            @media only screen and (max-width:576px) {
+                padding: 30px 0;
+            }
 
-.tienda .tiendaVisualizacion h4 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: hsl(0, 0%, 100%);
-    filter: drop-shadow(1px 1px 15px black);
-}
+            .ropa {
+                img {
+                    width: 130px;
+                    aspect-ratio: 4/6;
+                    transition: $transit-global;
+                    cursor: pointer;
 
-.tienda .tiendaVisualizacion h5 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: hsl(0, 0%, 100%);
-    filter: drop-shadow(1px 1px 15px black);
-}
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
 
-.tienda .tiendaVisualizacion .add img{
-    width: 35px;
-    filter: drop-shadow(1px 1px 15px white) invert(100%);
-    transition: 0.5s all;
-    cursor: pointer;
-}
+                &:hover img{
+                    filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.5));
+                }
+            }
 
-.tienda .tiendaVisualizacion .paginado img {
-    height: 20px;
-    width: 20px;
-    filter: invert(100%);
-    transition: 0.5s all;
-    cursor: pointer;
-}
+            h4 {
+                font-family: nth($fuentes, 2);
+                font-size: 2rem;
+                font-weight: 600;
+                color: nth($colores, 2);
+                filter: drop-shadow(1px 1px 15px black);
+            }
 
+            h5 {
+                font-family: nth($fuentes, 2);
+                font-size: 1rem;
+                font-weight: 600;
+                color: nth($colores, 2);
+                filter: drop-shadow(1px 1px 15px black);
+            }
 
-.tiendaCabecera img:hover{
-    transform: scale(1.2);
-}
+            .add {
+                img {
+                    width: 35px;
+                    filter: drop-shadow(1px 1px 15px nth($colores, 2)) invert(100%);
+                    transition: $transit-global;
+                    cursor: pointer;
 
-.add img:hover {
-    transform: rotate(180deg) scale(1.1);
-}
+                    &:hover{
+                        transform: rotate(180deg) scale(1.1);
+                    }
+                }
+            }
+        }
 
-.ropa:hover img {
-    filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.5));
-}
-
-.ropa img:hover{
-    transform: scale(1.1);
+        .paginado {
+            @extend %paginado;
+        }
+    }
 }

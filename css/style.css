@@ -4,6 +4,140 @@
   scroll-behavior: smooth;
 }
 
+/* Extends (nose porque se muestran al principio si lo importo en cada scss, entonces lo importo aca y queda al principio del css) */
+/* Extend Trayectoria */
+.trayectoria .der p em, .trayectoria .izq p em {
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Extend Filtros (Galeria y Tienda) */
+.tienda .filtros, .galeria .filtros {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 2%;
+  filter: drop-shadow(1px 1px 15px black);
+}
+.tienda .filtros .minmax, .galeria .filtros .minmax {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 50px 50px 0;
+}
+@media only screen and (max-width: 992px) {
+  .tienda .filtros .minmax, .galeria .filtros .minmax {
+    margin: 10px 20px 10px 0;
+  }
+}
+.tienda .filtros .minmax .img img, .galeria .filtros .minmax .img img {
+  height: 24px;
+  width: 24px;
+  filter: invert(100%);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.tienda .filtros .categoria, .galeria .filtros .categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tienda .filtros .categoria .nombrecat, .galeria .filtros .categoria .nombrecat {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.tienda .filtros .categoria .nombrecat img, .galeria .filtros .categoria .nombrecat img {
+  height: 24px;
+  width: 24px;
+  filter: invert(100%);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.tienda .filtros .categoria .nombrecat p, .galeria .filtros .categoria .nombrecat p {
+  padding-left: 10px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  filter: drop-shadow(1px 1px 15px black);
+}
+.tienda .filtros .categoria ul, .galeria .filtros .categoria ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0 30px 50px;
+  height: 130px;
+  list-style: none;
+}
+.tienda .filtros .categoria ul .k14, .galeria .filtros .categoria ul .k14 {
+  border-left: hsl(261deg, 74%, 38%) 3px solid;
+  color: hsl(261deg, 74%, 38%);
+  font-weight: 800;
+}
+.tienda .filtros .categoria ul li, .galeria .filtros .categoria ul li {
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+  padding: 0 0 0 10px;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+/* Extend Paginado (Galeria y Tienda) */
+.tienda .tiendaVisualizacion .paginado, .galeria .visualizacion .paginado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 5%;
+  margin-top: 50px;
+  filter: drop-shadow(0px 0px 20px black);
+}
+.tienda .tiendaVisualizacion .paginado img, .galeria .visualizacion .paginado img {
+  height: 20px;
+  width: 20px;
+  filter: invert(100%);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.tienda .tiendaVisualizacion .paginado a, .galeria .visualizacion .paginado a {
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans";
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 10px;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.tienda .tiendaVisualizacion .paginado .n1, .galeria .visualizacion .paginado .n1 {
+  border-bottom: hsl(261deg, 74%, 38%) 3px solid;
+  color: hsl(261deg, 74%, 38%);
+  font-weight: 800;
+}
+
+/* Extend Hover Img (Galeria y Tienda) */
+.tienda .filtros .minmax .img img:hover, .galeria .filtros .minmax .img img:hover, .tienda .filtros .categoria .nombrecat img:hover, .galeria .filtros .categoria .nombrecat img:hover, .tienda .tiendaVisualizacion .paginado img:hover, .galeria .visualizacion .paginado img:hover {
+  filter: drop-shadow(1px 1px 15px white);
+  transform: scale(1.1);
+  filter: invert(100%);
+}
+
+/* Extend Hover Subcategoria (Galeria y Tienda) */
+.tienda .filtros .categoria ul li:hover, .galeria .filtros .categoria ul li:hover, .tienda .tiendaVisualizacion .paginado a:hover, .galeria .visualizacion .paginado a:hover {
+  color: hsl(261deg, 74%, 38%);
+  transform: scale(1.1);
+}
+
+/* Extend Hover Contacto */
+.contacto textarea:hover, .contacto select:hover, .contacto input:hover {
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.3));
+}
+
 /* ------------------------------  NAVBAR BLACK ------------------------------ */
 .navbar .container-fluid {
   padding: 0 8%;
@@ -128,12 +262,6 @@
 }
 
 /* ------------------------------ TRAYECTORIA ------------------------------ */
-.trayectoria .der p em, .trayectoria .izq p em {
-  color: white;
-  font-style: normal;
-  font-weight: 600;
-}
-
 .trayectoria {
   background-image: url("../multimedia/imagenes/fondolargo2.png");
   background-size: cover;
@@ -261,7 +389,7 @@
 }
 @media only screen and (max-width: 1200px) {
   .trayectoria .row p {
-    text-align: justify;
+    text-align: left;
   }
   .trayectoria .intro p {
     text-align: center;
@@ -277,21 +405,18 @@
   background-position: center;
   padding: 5% 8%;
 }
-
-.discografia h2 {
+.discografia .row h2 {
   color: white;
   font-size: 3rem;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans";
   font-weight: 800;
   filter: drop-shadow(1px 1px 15px black);
   transition: 0.5s all;
 }
-
-.discografia h2:hover {
+.discografia .row h2:hover {
   filter: drop-shadow(0px 0px 40px white);
 }
-
-.discografia iframe {
+.discografia .row iframe {
   height: 400px;
   width: 100%;
   margin: 20px 25px 60px 0;
@@ -299,8 +424,7 @@
   border-radius: 5%;
   transition: 0.5s all;
 }
-
-.discografia iframe:hover {
+.discografia .row iframe:hover {
   transform: scale(1.02);
 }
 
@@ -311,90 +435,10 @@
   background-position: center;
   padding: 5% 8%;
 }
-
 .galeria p {
   margin-bottom: 0;
 }
-
-.filtros {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 0 2%;
-  filter: drop-shadow(1px 1px 15px black);
-}
-
-.minmax {
-  display: flex;
-  justify-content: flex-end;
-  margin: 50px 50px 50px 0;
-}
-
-@media only screen and (max-width: 992px) {
-  .minmax {
-    margin: 10px 20px 10px 0;
-  }
-}
-.img > img {
-  transition: 0.5s all;
-  cursor: pointer;
-}
-
-.categoria {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.categoria .nombrecat {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.nombrecat p {
-  padding-left: 10px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: hsl(0deg, 0%, 100%);
-  filter: drop-shadow(1px 1px 15px black);
-}
-
-.categoria ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 0 30px 50px;
-  height: 130px;
-  list-style: none;
-}
-
-.categoria ul .k14 {
-  border-left: hsl(261deg, 74%, 38%) 3px solid;
-  color: hsl(261deg, 74%, 38%);
-  font-weight: 800;
-}
-
-.categoria ul li {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: hsl(0deg, 0%, 100%);
-  padding: 0 0 0 10px;
-  filter: drop-shadow(1px 1px 15px black);
-  transition: 0.5s all;
-}
-
-.filtros img {
-  height: 24px;
-  width: 24px;
-  filter: invert(100%);
-  transition: 0.5s all;
-}
-
-.visualizacion {
+.galeria .visualizacion {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -403,7 +447,15 @@
   width: 100%;
   filter: drop-shadow(1px 1px 15px black);
 }
-
+.galeria .visualizacion p {
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
+  padding-bottom: 20px;
+}
 .galeria .visualizacion img {
   height: 100%;
   width: 100%;
@@ -413,69 +465,10 @@
   aspect-ratio: 16/10;
   transition: 0.5s all;
 }
-
 .galeria .visualizacion img:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 0 10px white);
 }
-
-.visualizacion p {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  color: hsl(0deg, 0%, 100%);
-  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
-  padding-bottom: 20px;
-}
-
-.paginado {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 30%;
-  height: 5%;
-  margin-top: 50px;
-  filter: drop-shadow(0px 0px 20px black);
-}
-
-.galeria .visualizacion .paginado img {
-  height: 20px;
-  width: 20px;
-  filter: invert(100%);
-  transition: 0.5s all;
-  cursor: pointer;
-}
-
-.paginado a {
-  text-decoration: none;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: hsl(0deg, 0%, 100%);
-  padding-bottom: 10px;
-  filter: drop-shadow(1px 1px 15px black);
-  transition: 0.5s all;
-  cursor: pointer;
-}
-
-.paginado .n1 {
-  border-bottom: hsl(261deg, 74%, 38%) 3px solid;
-  color: hsl(261deg, 74%, 38%);
-  font-weight: 800;
-}
-
-.img img:hover, .categoria img:hover, .paginado img:hover {
-  filter: drop-shadow(1px 1px 15px white);
-  transform: scale(1.1);
-  filter: invert(100%);
-}
-
-.categoria ul li:hover, .paginado a:hover {
-  color: hsl(261deg, 74%, 38%);
-  transform: scale(1.1);
-}
-
 /* ------------------------------ TIENDA ------------------------------ */
 .tienda {
   background-image: url("../multimedia/imagenes/fondobn2.png");
@@ -483,12 +476,10 @@
   background-position: center;
   padding: 5% 8%;
 }
-
 .tienda p {
   margin-bottom: 0;
 }
-
-.tiendaVisualizacion {
+.tienda .tiendaVisualizacion {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -497,97 +488,78 @@
   padding: 0 50px;
   filter: drop-shadow(1px 1px 15px black);
 }
-
 @media only screen and (max-width: 576px) {
   .tienda .tiendaVisualizacion {
     padding: 0;
   }
-  .tienda .tiendaVisualizacion .row {
-    padding: 30px 0;
-  }
 }
-.tiendaCabecera {
+.tienda .tiendaVisualizacion .tiendaCabecera {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 5%;
   width: 100%;
 }
-
-.tiendaCabecera > p {
-  font-family: "Poppins", sans-serif;
+.tienda .tiendaVisualizacion .tiendaCabecera p {
+  font-family: "Poppins";
   font-size: 40px;
   font-weight: 700;
-  color: hsl(0deg, 0%, 100%);
+  color: white;
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
 }
-
-.tiendaCabecera p em {
+.tienda .tiendaVisualizacion .tiendaCabecera p em {
   font-weight: 500;
   font-style: normal;
 }
-
-.tiendaCabecera img {
+.tienda .tiendaVisualizacion .tiendaCabecera img {
   width: 45px;
   filter: invert(100%);
   transition: 0.5s all;
   cursor: pointer;
 }
-
-.tienda .tiendaVisualizacion .ropa img {
+.tienda .tiendaVisualizacion .tiendaCabecera img:hover {
+  transform: scale(1.2);
+}
+@media only screen and (max-width: 576px) {
+  .tienda .tiendaVisualizacion .row {
+    padding: 30px 0;
+  }
+}
+.tienda .tiendaVisualizacion .row .ropa img {
   width: 130px;
   aspect-ratio: 4/6;
   transition: 0.5s all;
   cursor: pointer;
 }
-
-.tienda .tiendaVisualizacion h4 {
-  font-family: "Poppins", sans-serif;
+.tienda .tiendaVisualizacion .row .ropa img:hover {
+  transform: scale(1.1);
+}
+.tienda .tiendaVisualizacion .row .ropa:hover img {
+  filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.5));
+}
+.tienda .tiendaVisualizacion .row h4 {
+  font-family: "Poppins";
   font-size: 2rem;
   font-weight: 600;
-  color: hsl(0deg, 0%, 100%);
+  color: white;
   filter: drop-shadow(1px 1px 15px black);
 }
-
-.tienda .tiendaVisualizacion h5 {
-  font-family: "Poppins", sans-serif;
+.tienda .tiendaVisualizacion .row h5 {
+  font-family: "Poppins";
   font-size: 1rem;
   font-weight: 600;
-  color: hsl(0deg, 0%, 100%);
+  color: white;
   filter: drop-shadow(1px 1px 15px black);
 }
-
-.tienda .tiendaVisualizacion .add img {
+.tienda .tiendaVisualizacion .row .add img {
   width: 35px;
   filter: drop-shadow(1px 1px 15px white) invert(100%);
   transition: 0.5s all;
   cursor: pointer;
 }
-
-.tienda .tiendaVisualizacion .paginado img {
-  height: 20px;
-  width: 20px;
-  filter: invert(100%);
-  transition: 0.5s all;
-  cursor: pointer;
-}
-
-.tiendaCabecera img:hover {
-  transform: scale(1.2);
-}
-
-.add img:hover {
+.tienda .tiendaVisualizacion .row .add img:hover {
   transform: rotate(180deg) scale(1.1);
 }
-
-.ropa:hover img {
-  filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.5));
-}
-
-.ropa img:hover {
-  transform: scale(1.1);
-}
-
 /* ------------------------------ CONTACTO ------------------------------ */
 .contacto {
   background-image: url("../multimedia/imagenes/fondobn2.png");
@@ -595,45 +567,23 @@
   background-position: center;
   padding: 50px 8%;
 }
-
 .contacto h2 {
   color: white;
   font-size: 2.5rem;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans";
   font-weight: 800;
   filter: drop-shadow(1px 1px 15px black);
   transition: 0.5s all;
 }
-
-.mapa {
-  height: 100%;
-  border-radius: 3px;
-}
-
-.mapa iframe {
-  border: none;
-  border-radius: 3px;
-  opacity: 85%;
-  transition: 0.5s all;
-  height: 100%;
-  width: 100%;
-}
-
-.mapa iframe:hover {
-  transform: scale(1.01);
-  filter: drop-shadow(0px 0px 5px rgb(201, 201, 201));
-}
-
 .contacto label {
   color: white;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans";
   font-weight: 800;
   font-size: 1.5rem;
 }
-
 .contacto input {
   border-radius: 3px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans";
   font-weight: 500;
   font-size: 0.8rem;
   border: none;
@@ -642,14 +592,16 @@
   box-shadow: 1px 1px 15px black;
   transition: 0.5s all;
 }
-
 .contacto input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.42);
 }
-
+.contacto input:focus {
+  background-color: rgba(60, 60, 60, 0.5);
+  color: white;
+}
 .contacto select {
   border-radius: 3px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans";
   font-weight: 500;
   font-size: 0.8rem;
   border: none;
@@ -661,10 +613,9 @@
   padding-left: 10px;
   cursor: pointer;
 }
-
 .contacto textarea {
   border-radius: 3px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans";
   font-weight: 500;
   font-size: 0.8rem;
   border: none;
@@ -673,26 +624,18 @@
   box-shadow: 1px 1px 15px black;
   transition: 0.5s all;
 }
-
 .contacto textarea::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-
-.contacto input:focus {
-  background-color: rgba(60, 60, 60, 0.5);
-  color: white;
-}
-
 .contacto textarea:focus {
   background-color: rgba(60, 60, 60, 0.5);
   color: white;
 }
-
 .contacto button {
   border-radius: 3px;
   height: 30px;
   width: 100px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans";
   font-weight: 500;
   font-size: 0.8rem;
   border: none;
@@ -703,14 +646,25 @@
   margin-left: 20px;
   cursor: pointer;
 }
-
 .contacto button:hover {
   background-color: hsla(250deg, 85%, 45%, 0.2);
   transform: scale(1.1);
 }
-
-.contacto input:hover, .contacto select:hover, .contacto textarea:hover {
-  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.3));
+.contacto .mapa {
+  height: 100%;
+  border-radius: 3px;
+}
+.contacto .mapa iframe {
+  border: none;
+  border-radius: 3px;
+  opacity: 85%;
+  transition: 0.5s all;
+  height: 100%;
+  width: 100%;
+}
+.contacto .mapa iframe:hover {
+  transform: scale(1.01);
+  filter: drop-shadow(0px 0px 5px rgb(201, 201, 201));
 }
 
 /* ------------------------------ FOOTER ------------------------------ */
@@ -843,47 +797,37 @@ footer .footernav ul li .politicas:hover {
   padding: 2% 10%;
   height: auto;
 }
-
 .politica h1 {
   color: white;
-  font-size: 60px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans";
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
   font-weight: 800;
   margin: 20px 0;
-  filter: drop-shadow(1px 1px 15px black);
-  transition: 0.5s all;
 }
-
 .politica h2 {
   color: white;
-  font-size: 40px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 700;
-  margin: 20px 0;
+  font-family: "Plus Jakarta Sans";
   filter: drop-shadow(1px 1px 15px black);
   transition: 0.5s all;
-  margin-top: 70px;
+  font-weight: 700;
+  margin: 70px 0 20px 0;
 }
-
 .politica h3 {
   color: white;
-  font-size: 25px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans";
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
   font-weight: 700;
   margin: 20px 0;
-  filter: drop-shadow(1px 1px 15px black);
-  transition: 0.5s all;
 }
-
 .politica p {
   color: rgb(210, 210, 210);
-  font-size: 20px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 500;
-  margin: 15px 0;
+  font-family: "Plus Jakarta Sans";
   filter: drop-shadow(1px 1px 15px black);
   transition: 0.5s all;
-  width: 60%;
+  font-weight: 500;
+  margin: 15px 0;
 }
 
 /* ------------------------------ ANIMACIONES ------------------------------ */

@@ -1,9 +1,169 @@
 @import 'variables';
 @import 'listas';
 
-
+/* Extend Trayectoria */
 %em-trayectoria {
-    color: nth($colores,2);
+    color: nth($colores, 2);
     font-style: normal;
     font-weight: 600;
+}
+
+/* Extend Filtros (Galeria y Tienda) */
+%filtros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 2%;
+    filter: drop-shadow(1px 1px 15px nth($colores, 1));
+
+    .minmax {
+        display: flex;
+        justify-content: flex-end;
+        margin: 50px 50px 50px 0;
+
+        @media only screen and (max-width:992px) {
+            margin: 10px 20px 10px 0;
+        }
+
+        .img {
+            img {
+                height: 24px;
+                width: 24px;
+                filter: invert(100%);
+                transition: $transit-global;
+                cursor: pointer;
+
+                &:hover {
+                    @extend %hover-botones;
+                }
+            }
+        }
+    }
+
+    .categoria {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .nombrecat {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            img {
+                height: 24px;
+                width: 24px;
+                filter: invert(100%);
+                transition: $transit-global;
+                cursor: pointer;
+
+                &:hover {
+                    @extend %hover-botones;
+                }
+            }
+
+            p {
+                padding-left: 10px;
+                font-family: nth($fuentes, 1);
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: hsl(0, 0%, 100%);
+                filter: drop-shadow(1px 1px 15px nth($colores, 1));
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 0 30px 50px;
+            height: 130px;
+            list-style: none;
+
+            .k14 {
+                border-left: nth($colores, 3) 3px solid;
+                color: nth($colores, 3);
+                font-weight: 800;
+            }
+
+            li {
+                font-family: nth($fuentes, 1);
+                font-size: 1rem;
+                font-weight: 600;
+                color: hsl(0, 0%, 100%);
+                padding: 0 0 0 10px;
+                filter: drop-shadow(1px 1px 15px nth($colores, 1));
+                transition: $transit-global;
+                cursor: pointer;
+
+                &:hover {
+                    @extend %hover-subcat;
+                }
+            }
+        }
+    }
+}
+
+/* Extend Paginado (Galeria y Tienda) */
+%paginado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 5%;
+    margin-top: 50px;
+    filter: drop-shadow(0px 0px 20px nth($colores, 1));
+
+    img {
+        height: 20px;
+        width: 20px;
+        filter: invert(100%);
+        transition: $transit-global;
+        cursor: pointer;
+
+        &:hover {
+            @extend %hover-botones;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-family: nth($fuentes, 1);
+        font-size: 15px;
+        font-weight: 700;
+        color: nth($colores, 2);
+        padding-bottom: 10px;
+        filter: drop-shadow(1px 1px 15px nth($colores, 1));
+        transition: $transit-global;
+        cursor: pointer;
+
+        &:hover {
+            @extend %hover-subcat;
+        }
+    }
+
+    .n1 {
+        border-bottom: nth($colores, 3) 3px solid;
+        color: nth($colores, 3);
+        font-weight: 800;
+    }
+}
+
+/* Extend Hover Img (Galeria y Tienda) */
+%hover-botones {
+    filter: drop-shadow(1px 1px 15px white);
+    transform: scale(1.1);
+    filter: invert(100%);
+}
+
+/* Extend Hover Subcategoria (Galeria y Tienda) */
+%hover-subcat {
+    color: nth($colores, 3);
+    transform: scale(1.1);
+}
+
+/* Extend Hover Contacto */
+%hover-contacto{
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.3));
 }

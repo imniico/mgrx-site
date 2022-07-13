@@ -1,7 +1,6 @@
 /* ------------------------------ TRAYECTORIA ------------------------------ */
 
 @import '../base/mixins';
-@import '../base/extends';
 
 .trayectoria {
     background-image: url("../multimedia/imagenes/fondolargo2.png");
@@ -152,7 +151,7 @@
 
 @media only screen and (max-width: 1200px){   
     .trayectoria .row p{
-        text-align: justify;
+        text-align: left;
     }
     .trayectoria .intro p{
         text-align: center;

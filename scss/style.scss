@@ -4,6 +4,9 @@
 
 @import 'components/reinicio';
 
+/* Extends (nose porque se muestran al principio si lo importo en cada scss, entonces lo importo aca y queda al principio del css) */
+@import 'base/extends';
+
 @import 'components/navbar';
 @import 'components/navbarlight';
 
