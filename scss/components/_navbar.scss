@@ -33,6 +33,7 @@
                         transition: $transit-global;
                         text-transform: uppercase;
                         color: nth($colores, 2);
+                        filter: drop-shadow(0px 0px 10px black);
 
                         &:hover {
                             color: nth($colores, 3);
