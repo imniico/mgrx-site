@@ -345,7 +345,7 @@
   transform: scale(1.02);
   filter: drop-shadow(0px 0px 10px white);
 }
-.trayectoria .row .tituloTrayectoria p {
+.trayectoria .row .tituloTrayectoria h1 {
   font-size: 40px;
   font-family: "Plus Jakarta Sans";
   color: white;
@@ -355,7 +355,20 @@
   text-align: center;
   transition: 0.5s all;
 }
-.trayectoria .row .tituloTrayectoria p:hover {
+.trayectoria .row .tituloTrayectoria h1:hover {
+  filter: drop-shadow(0px 0px 15px white);
+}
+.trayectoria .row .tituloTrayectoria h2 {
+  font-size: 40px;
+  font-family: "Plus Jakarta Sans";
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  transition: 0.5s all;
+}
+.trayectoria .row .tituloTrayectoria h2:hover {
   filter: drop-shadow(0px 0px 15px white);
 }
 .trayectoria .row p .emNombre {
@@ -441,7 +454,7 @@
   width: 100%;
   filter: drop-shadow(1px 1px 15px black);
 }
-.galeria .visualizacion p {
+.galeria .visualizacion h1 {
   font-family: "Poppins";
   font-size: 2rem;
   font-weight: 700;
@@ -494,14 +507,14 @@
   height: 5%;
   width: 100%;
 }
-.tienda .tiendaVisualizacion .tiendaCabecera p {
+.tienda .tiendaVisualizacion .tiendaCabecera h1 {
   font-family: "Poppins";
   font-size: 40px;
   font-weight: 700;
   color: white;
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
 }
-.tienda .tiendaVisualizacion .tiendaCabecera p em {
+.tienda .tiendaVisualizacion .tiendaCabecera h1 em {
   font-weight: 500;
   font-style: normal;
 }
@@ -560,6 +573,14 @@
   background-size: cover;
   background-position: center;
   padding: 50px 8%;
+}
+.contacto h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 800;
+  filter: drop-shadow(1px 1px 15px black);
+  transition: 0.5s all;
 }
 .contacto h2 {
   color: white;
