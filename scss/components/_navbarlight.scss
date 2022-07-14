@@ -22,7 +22,7 @@
                         color: nth($colores,1);
                         &:hover{
                             color: nth($colores, 3);
-                            transform: scale(1.1);
+                            background-size: 0% 2px;
                         }                        
                     }
                     .active{

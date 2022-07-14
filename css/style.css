@@ -196,7 +196,7 @@
 }
 .bg-light .container-fluid #navbarNav ul .nav-item .nav-link:hover {
   color: hsl(261deg, 74%, 38%);
-  transform: scale(1.1);
+  background-size: 0% 2px;
 }
 .bg-light .container-fluid #navbarNav ul .nav-item .active {
   filter: drop-shadow(1px 1px 10px hsl(261deg, 74%, 38%));
