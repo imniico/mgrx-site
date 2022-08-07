@@ -350,7 +350,6 @@
 }
 .trayectoria .row img:hover {
   transform: scale(1.02);
-  filter: drop-shadow(0px 0px 10px white);
 }
 .trayectoria .row .tituloTrayectoria h1 {
   font-size: 40px;
@@ -403,7 +402,7 @@
 }
 @media only screen and (max-width: 1200px) {
   .trayectoria .row p {
-    text-align: left;
+    text-align: justify;
   }
   .trayectoria .intro p {
     text-align: center;
@@ -419,16 +418,18 @@
   background-position: center;
   padding: 5% 8%;
 }
+.discografia h1 {
+  color: white;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 800;
+  text-align: center;
+}
 .discografia .row h2 {
   color: white;
-  font-size: 3rem;
   font-family: "Plus Jakarta Sans";
   font-weight: 800;
   filter: drop-shadow(1px 1px 15px black);
   transition: 0.5s all;
-}
-.discografia .row h2:hover {
-  filter: drop-shadow(0px 0px 40px white);
 }
 .discografia .row iframe {
   height: 400px;
@@ -481,7 +482,6 @@
 }
 .galeria .visualizacion img:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 0 10px white);
 }
 /* ------------------------------ TIENDA ------------------------------ */
 .tienda {
@@ -583,7 +583,6 @@
 }
 .contacto h1 {
   color: white;
-  font-size: 2.5rem;
   font-family: "Plus Jakarta Sans";
   font-weight: 800;
   filter: drop-shadow(1px 1px 15px black);
