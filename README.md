@@ -1,10 +1,11 @@
 # proyecto-final-garrix
 <h1 align="center">Hi 👋, I'm Nicolás Mingorance</h1>
-<h3 align="center">A passionate systems engineer student from Córdoba, Argentina.</h3>
+<h3 align="center">A passionate systems engineer student from UTN FRC at Córdoba, Argentina.</h3>
 
 - 🌱 I’m currently learning **Javascript and React.**
 
-<h3 align="left">Connect with me:</h3>
+- 📫 How to reach me **niico.mingorance@gmail.com**
+
 <p align="left">
 </p>
 
