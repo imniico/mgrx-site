@@ -1,5 +1,5 @@
 # proyecto-final-garrix
-<h1 align="center">Hi 👋, I'm Nicolás Mingorance</h1>
+<h1 align="center">Hi 👋, I'm Nico Mingorance</h1>
 <h3 align="center">A passionate systems engineer student from UTN FRC at Córdoba, Argentina.</h3>
 
 - 🌱 I’m currently learning **Javascript and React.**
