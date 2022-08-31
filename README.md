@@ -1,4 +1,3 @@
-# mgrx-site | Sitio no oficial - Martin Garrix
 <h1 align="center">Hi 👋, I'm Nico Mingorance</h1>
 <h3 align="center">A passionate systems engineer student from UTN FRC at Córdoba, Argentina.</h3>
 
@@ -6,7 +5,8 @@
 
 - 📫 How to reach me **niico.mingorance@gmail.com**
 
-- ➕❌ Link website: https://imniico.github.io/proyecto-final-garrix/
+<h5 align="center"> Sitio no oficial - Martin Garrix | mgrx-site </h3>
+- ➕❌ Link: https://imniico.github.io/mgrx-site/
 
 <p align="left">
 </p>
