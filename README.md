@@ -5,7 +5,7 @@
 
 - 📫 How to reach me **niico.mingorance@gmail.com**
 
-<h5 align="center"> Sitio no oficial - Martin Garrix | mgrx-site </h3>
+<h4> Sitio no oficial - Martin Garrix | mgrx-site </h4>
 - ➕❌ Link: https://imniico.github.io/mgrx-site/
 
 <p align="left">
