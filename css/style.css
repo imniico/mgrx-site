@@ -446,7 +446,7 @@
 /* ------------------------------ GALERIA ------------------------------ */
 .galeria {
   background-image: url("../multimedia/imagenes/fondobn2.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   padding: 5% 8%;
 }
@@ -482,6 +482,10 @@
 }
 .galeria .visualizacion img:hover {
   transform: scale(1.05);
+}
+
+#filters, #contenido{
+  transition: 0.2s all;
 }
 /* ------------------------------ TIENDA ------------------------------ */
 .tienda {

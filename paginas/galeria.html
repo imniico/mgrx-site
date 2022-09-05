@@ -12,8 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Agregadas -->
-    <meta name="description" content="Sitio web dedicado a la visualización de imagenes del DJ y productor de música electrónica Martin Garrix">
-    <meta name="keywords" content="dj, producer, martin, garrix, festival, edm, electronic, music, progressive, ultra, tomorrowland">
+    <meta name="description"
+        content="Sitio web dedicado a la visualización de imagenes del DJ y productor de música electrónica Martin Garrix">
+    <meta name="keywords"
+        content="dj, producer, martin, garrix, festival, edm, electronic, music, progressive, ultra, tomorrowland">
     <meta name="author" content="Nicolás Mingorance">
     <meta name="copyright" content="Nicolás Mingorance">
 
@@ -83,11 +85,11 @@
         <div class="row gy-5">
 
             <!-- Filtros -->
-            <div class="col-xl-3 col-sm-12">
+            <div class="col-xl-3 col-sm-12" id="filters">
                 <div class="filtros">
                     <div class="minmax">
-                        <div class="img">
-                            <img src="../multimedia/imagenes/izquierdaN.png" alt="Minimizar filtros">
+                        <div class="img" id="minimax">
+                            <img src="../multimedia/imagenes/izquierdaN.png" id="botonminmax" alt="Minimizar filtros">
                         </div>
                     </div>
 
@@ -133,7 +135,7 @@
             </div>
 
             <!-- Visualización de la galería + paginado -->
-            <div class="col-xl-9 col-sm-12">
+            <div class="col-xl-9 col-sm-12" id="contenido">
                 <div class="visualizacion">
 
                     <h1> GALERÍA | TOMORROWLAND 2014 </h1>
@@ -141,41 +143,53 @@
 
                     <div class="row gy-3">
                         <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria1.jpg" alt="Martin Garrix en Tomorrowland Primer Imagen"></div>
+                            <div><img src="../multimedia/imagenes/galeria1.jpg"
+                                    alt="Martin Garrix en Tomorrowland Primer Imagen"></div>
                         </div>
                         <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria2.jpg" alt="Martin Garrix en Tomorrowland Segunda Imagen"></div>
+                            <div><img src="../multimedia/imagenes/galeria2.jpg"
+                                    alt="Martin Garrix en Tomorrowland Segunda Imagen"></div>
                         </div>
                         <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria3.jpg" alt="Martin Garrix en Tomorrowland Tercera Imagen"></div>
+                            <div><img src="../multimedia/imagenes/galeria3.jpg"
+                                    alt="Martin Garrix en Tomorrowland Tercera Imagen"></div>
                         </div>
                         <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria4.jpg" alt="Martin Garrix en Tomorrowland Cuarta Imagen"></div>
+                            <div><img src="../multimedia/imagenes/galeria4.jpg"
+                                    alt="Martin Garrix en Tomorrowland Cuarta Imagen"></div>
                         </div>
                         <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria5.jpg" alt="Martin Garrix en Tomorrowland Quinta Imagen"></div>
+                            <div><img src="../multimedia/imagenes/galeria5.jpg"
+                                    alt="Martin Garrix en Tomorrowland Quinta Imagen"></div>
                         </div>
-                        
+
                         <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria6.jpg" alt="Martin Garrix en Tomorrowland Sexta Imagen"></div>
-                        </div>
-                        <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria7.jpg" alt="Martin Garrix en Tomorrowland Septima Imagen"></div>
-                        </div>
-                        <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria8.jpg" alt="Martin Garrix en Tomorrowland Octava Imagen"></div>
+                            <div><img src="../multimedia/imagenes/galeria6.jpg"
+                                    alt="Martin Garrix en Tomorrowland Sexta Imagen"></div>
                         </div>
                         <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria9.jpg" alt="Martin Garrix en Tomorrowland Novena Imagen"></div>
+                            <div><img src="../multimedia/imagenes/galeria7.jpg"
+                                    alt="Martin Garrix en Tomorrowland Septima Imagen"></div>
                         </div>
                         <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria10.jpg" alt="Martin Garrix en Tomorrowland Decima Imagen"></div>
+                            <div><img src="../multimedia/imagenes/galeria8.jpg"
+                                    alt="Martin Garrix en Tomorrowland Octava Imagen"></div>
                         </div>
                         <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria11.jpg" alt="Martin Garrix en Tomorrowland Undecima Imagen"></div>
+                            <div><img src="../multimedia/imagenes/galeria9.jpg"
+                                    alt="Martin Garrix en Tomorrowland Novena Imagen"></div>
                         </div>
                         <div class="col-xxl-4 col-md-6 col-sm-12">
-                            <div><img src="../multimedia/imagenes/galeria12.jpg" alt="Martin Garrix en Tomorrowland Duodecima Imagen"></div>
+                            <div><img src="../multimedia/imagenes/galeria10.jpg"
+                                    alt="Martin Garrix en Tomorrowland Decima Imagen"></div>
+                        </div>
+                        <div class="col-xxl-4 col-md-6 col-sm-12">
+                            <div><img src="../multimedia/imagenes/galeria11.jpg"
+                                    alt="Martin Garrix en Tomorrowland Undecima Imagen"></div>
+                        </div>
+                        <div class="col-xxl-4 col-md-6 col-sm-12">
+                            <div><img src="../multimedia/imagenes/galeria12.jpg"
+                                    alt="Martin Garrix en Tomorrowland Duodecima Imagen"></div>
                         </div>
                     </div>
 
@@ -259,6 +273,9 @@
         </div>
 
     </footer>
+
+    <!-- Script propio -->
+    <script src="../script.js"></script>
 
     <!-- Script para bootstrap -->
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
